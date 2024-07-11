@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
@@ -110,13 +112,15 @@
         </div>
       </div>
 
-      <div class="gird grid-cols-3 gap-8 max-w-screen-lg m-auto">
-        <h1 class="text-center text-3xl py-8 font-semibold">
+      <div
+        class="grid grid-cols-3 md:grid-cols-1 gap-8 max-w-screen-lg mx-auto"
+      >
+        <h1 class="col-span-3 text-center text-3xl py-8 font-semibold">
           Programming Languages
         </h1>
         <div class="w-80 border border-gray-600 rounded-md overflow-hidden">
           <img src="./images/HtmlBackgroudImg.jpg" alt="html image" />
-          <div class="p-1 text-slate-800">
+          <div class="p-4 text-slate-800">
             <h2 class="my-2 text-xl font-semibold">HTML</h2>
             <p class="text-sm">
               Learn the basics of <b>HTML</b>, the standard markup language for
@@ -131,7 +135,7 @@
         </div>
         <div class="w-80 border border-gray-600 rounded-md overflow-hidden">
           <img src="./images/cssBackgroundImg.png" alt="Css image" />
-          <div class="p-1 text-slate-800">
+          <div class="p-4 text-slate-800">
             <h2 class="my-2 text-xl font-semibold">CSS</h2>
             <p class="text-sm">
               Style your web pages with <b>CSS</b>, the language used to
@@ -148,7 +152,7 @@
 
         <div class="w-80 border border-gray-600 rounded-md overflow-hidden">
           <img src="./images/javascriptBgImg.jpg" alt="javascript image" />
-          <div class="p-1 text-slate-800">
+          <div class="p-4 text-slate-800">
             <h2 class="my-2 text-xl font-semibold">JavaScript</h2>
             <p class="text-sm">
               Make your web pages interactive with <b>JavaScript</b>, the
@@ -164,7 +168,7 @@
 
         <div class="w-80 border border-gray-600 rounded-md overflow-hidden">
           <img src="./images/reactjsBgImg.png" alt="react.js image" />
-          <div class="p-1 text-slate-800">
+          <div class="p-4 text-slate-800">
             <h2 class="my-2 text-xl font-semibold">React JS</h2>
             <p class="text-sm">
               Build powerful web applications with <b>React</b>
@@ -181,7 +185,7 @@
 
         <div class="w-80 border border-gray-600 rounded-md overflow-hidden">
           <img src="./images/cBgImg.png" alt="C programming image" />
-          <div class="p-1 text-slate-800">
+          <div class="p-4 text-slate-800">
             <h2 class="my-2 text-xl font-semibold">C Programming</h2>
             <p class="text-sm">
               Master the fundamentals of <b>C</b>, a powerful general-purpose
@@ -199,7 +203,7 @@
 
         <div class="w-80 border border-gray-600 rounded-md overflow-hidden">
           <img src="./images/cppBgImg.png" alt="C++ image" />
-          <div class="p-1 text-slate-800">
+          <div class="p-4 text-slate-800">
             <h2 class="my-2 text-xl font-semibold">C++ Programming</h2>
             <p class="text-sm">
               Explore the advanced features of <b>C++</b>, an object-oriented
@@ -214,23 +218,44 @@
           </div>
         </div>
       </div>
-
-      <a href="index.html">
-        <button>Move to top ⬆</button>
+      <!-- Move to top button -->
+      <a href="#" class="fixed bottom-4 right-4">
+        <button
+          class="px-4 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-700 transition duration-300"
+        >
+          Move to top ⬆
+        </button>
       </a>
+
       <hr />
-      <footer>
-        <div>
-          <p>Learn Hub | learn coding with learn hub</p>
-          <div>
-            <a href="https://www.facebook.com" target="_blank">Facebook</a>
-            &nbsp; | &nbsp;
-            <a href="https://www.twitter.com" target="_blank">Twitter</a> &nbsp;
-            | &nbsp;
-            <a href="https://www.instagram.com" target="_blank">Instagram</a>
-            &nbsp; | &nbsp;
-            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
-          </div>
+      <!-- Footer -->
+      <footer class="bg-black text-white text-center py-4">
+        <p>Learn Hub | learn coding with learn hub</p>
+        <div class="mt-2">
+          <a
+            href="https://www.facebook.com"
+            target="_blank"
+            class="text-blue-500 hover:text-blue-700 mx-2"
+            >Facebook</a
+          >
+          <a
+            href="https://www.twitter.com"
+            target="_blank"
+            class="text-blue-500 hover:text-blue-700 mx-2"
+            >Twitter</a
+          >
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            class="text-blue-500 hover:text-blue-700 mx-2"
+            >Instagram</a
+          >
+          <a
+            href="https://www.linkedin.com"
+            target="_blank"
+            class="text-blue-500 hover:text-blue-700 mx-2"
+            >LinkedIn</a
+          >
         </div>
       </footer>
     </div>
