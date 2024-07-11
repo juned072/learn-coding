@@ -3,8 +3,6 @@
  - Welcome to **Learn Hub!!** .  Learn hub is a online platform which consist of different computer language
  - It aims to provide a comprehensive resource for developers and tech students to explore different language 
  - whether you're a beginner looking to get started with your first language or an experienced developer aiming to broaden your skill set, you'll find valuable content here
-  
-  ![screenshot](./images/Screenshot%20.png)   
 
 
  #**Languages Covered**
