@@ -15,7 +15,7 @@
         <img src="./images/learning.png" alt="icon" width="40px" />
         <h1 class="text-2xl font-bold">Learn Hub</h1>
       </div>
-      <div>
+      <div class="hidden md:flex">
         <a
           class="hover:bg-red-600 p-3 cursor-pointer rounded-md transition duration-100 ease-in-out"
           >Home</a
@@ -92,7 +92,10 @@
         style="background-image: url('./images/backgoundImg.jpg')"
       >
         <div class="absolute inset-0 bg-black opacity-80"></div>
-        <div class="relative z-10 text-white" style="width: 800px">
+        <div
+          class="relative z-10 text-white max-w-md mx-auto"
+          style="width: 800px"
+        >
           <h1 class="text-5xl font-bold mb-5">Welcome to Learn Hub</h1>
           <p class="mb-4">
             Your ultimate resource for learning <b>web development</b> and
@@ -112,113 +115,165 @@
         </div>
       </div>
 
-      <div
-        class="grid grid-cols-3 md:grid-cols-1 gap-8 max-w-screen-lg mx-auto"
-      >
-        <h1 class="col-span-3 text-center text-3xl py-8 font-semibold">
+      <div class="md:p-0 p-8">
+        <h1
+          class="col-span-3 text-center md:text-3xl text-2xl mb-10 font-semibold"
+        >
           Programming Languages
         </h1>
-        <div class="w-80 border border-gray-600 rounded-md overflow-hidden">
-          <img src="./images/HtmlBackgroudImg.jpg" alt="html image" />
-          <div class="p-4 text-slate-800">
-            <h2 class="my-2 text-xl font-semibold">HTML</h2>
-            <p class="text-sm">
-              Learn the basics of <b>HTML</b>, the standard markup language for
-              creating web pages. Understand the structure of web content and
-              the foundation of all web development. Start building your own web
-              pages from scratch
-              <a href="./pages/htmlPage.html" class="ml-1 text-blue-500"
-                >Read more...</a
-              >
-            </p>
-          </div>
-        </div>
-        <div class="w-80 border border-gray-600 rounded-md overflow-hidden">
-          <img src="./images/cssBackgroundImg.png" alt="Css image" />
-          <div class="p-4 text-slate-800">
-            <h2 class="my-2 text-xl font-semibold">CSS</h2>
-            <p class="text-sm">
-              Style your web pages with <b>CSS</b>, the language used to
-              describe the presentation of web pages. Master the art of
-              <b>web design</b>, including layout, color schemes, and
-              typography. Create visually appealing websites that captivate your
-              audience.
-              <a href="./pages/CssPage.html" class="ml-1 text-blue-500"
-                >Read more...</a
-              >
-            </p>
-          </div>
-        </div>
 
-        <div class="w-80 border border-gray-600 rounded-md overflow-hidden">
-          <img src="./images/javascriptBgImg.jpg" alt="javascript image" />
-          <div class="p-4 text-slate-800">
-            <h2 class="my-2 text-xl font-semibold">JavaScript</h2>
-            <p class="text-sm">
-              Make your web pages interactive with <b>JavaScript</b>, the
-              programming language of the web. Learn to manipulate the DOM,
-              handle events, and <b>create dynamic content</b>. Enhance user
-              experience with animations, form validations, and more.
-              <a href="./pages/javascriptPage.html" class="ml-1 text-blue-500"
-                >Read more...</a
-              >
-            </p>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-screen-lg mx-auto"
+        >
+          <div
+            class="w-full md:w-80 border border-gray-600 rounded-md overflow-hidden"
+          >
+            <img
+              src="./images/HtmlBackgroudImg.jpg"
+              alt="html image"
+              class="w-full h-48"
+            />
+            <div class="p-4 text-slate-800">
+              <h2 class="my-2 text-xl font-semibold">HTML</h2>
+              <p class="text-sm">
+                Learn the basics of <b>HTML</b>, the standard markup language
+                for creating web pages. Understand the structure of web content
+                and the foundation of all web development. Start building your
+                own web pages from scratch
+                <a
+                  href="./pages/htmlPage.html"
+                  class="ml-1 text-blue-500 hover:text-blue-700"
+                  >Read more...</a
+                >
+              </p>
+            </div>
           </div>
-        </div>
-
-        <div class="w-80 border border-gray-600 rounded-md overflow-hidden">
-          <img src="./images/reactjsBgImg.png" alt="react.js image" />
-          <div class="p-4 text-slate-800">
-            <h2 class="my-2 text-xl font-semibold">React JS</h2>
-            <p class="text-sm">
-              Build powerful web applications with <b>React</b>
-              a JavaScript library for building user interfaces.
-              <b>Develop reusable components, manage state</b>
-              and handle user input effectively. <b>Create fast</b>,
-              <b>scalable</b>, and maintainable web apps.
-              <a href="./pages/reactjsPage.html" class="ml-1 text-blue-500"
-                >Read more...</a
-              >
-            </p>
+          <div
+            class="w-full md:w-80 border border-gray-600 rounded-md overflow-hidden"
+          >
+            <img
+              src="./images/cssBackgroundImg.png"
+              alt="Css image"
+              class="w-full h-48"
+            />
+            <div class="p-4 text-slate-800">
+              <h2 class="my-2 text-xl font-semibold">CSS</h2>
+              <p class="text-sm">
+                Style your web pages with <b>CSS</b>, the language used to
+                describe the presentation of web pages. Master the art of
+                <b>web design</b>, including layout, color schemes, and
+                typography. Create visually appealing websites that captivate
+                your audience.
+                <a
+                  href="./pages/CssPage.html"
+                  class="ml-1 text-blue-500 hover:text-blue-700"
+                  >Read more...</a
+                >
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="w-80 border border-gray-600 rounded-md overflow-hidden">
-          <img src="./images/cBgImg.png" alt="C programming image" />
-          <div class="p-4 text-slate-800">
-            <h2 class="my-2 text-xl font-semibold">C Programming</h2>
-            <p class="text-sm">
-              Master the fundamentals of <b>C</b>, a powerful general-purpose
-              programming language used for system programming, embedded
-              systems, and developing operating systems.
-              <b>Write efficient code, manage memory</b>, and build complex
-              applicationsz. <b>Create fast</b>, <b>reliable</b>, and portable
-              software.
-              <a href="./pages/CPage.html" class="ml-1 text-blue-500"
-                >Read more...</a
-              >
-            </p>
+          <div
+            class="w-full md:w-80 border border-gray-600 rounded-md overflow-hidden"
+          >
+            <img
+              src="./images/javascriptBgImg.jpg"
+              alt="javascript image"
+              class="w-full h-48"
+            />
+            <div class="p-4 text-slate-800">
+              <h2 class="my-2 text-xl font-semibold">JavaScript</h2>
+              <p class="text-sm">
+                Make your web pages interactive with <b>JavaScript</b>, the
+                programming language of the web. Learn to manipulate the DOM,
+                handle events, and <b>create dynamic content</b>. Enhance user
+                experience with animations, form validations, and more.
+                <a
+                  href="./pages/javascriptPage.html"
+                  class="ml-1 text-blue-500 hover:text-blue-700"
+                  >Read more...</a
+                >
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="w-80 border border-gray-600 rounded-md overflow-hidden">
-          <img src="./images/cppBgImg.png" alt="C++ image" />
-          <div class="p-4 text-slate-800">
-            <h2 class="my-2 text-xl font-semibold">C++ Programming</h2>
-            <p class="text-sm">
-              Explore the advanced features of <b>C++</b>, an object-oriented
-              programming languagez that builds on C.
-              <b>Create high-performance applications</b>, develop reusable
-              classes, and manage resources efficiently. <b>Design robust</b>,
-              <b>scalable</b>, and extensible software systems.
-              <a href="./pages/CPage.html" class="ml-1 text-blue-500"
-                >Read more...</a
-              >
-            </p>
+          <div
+            class="w-full md:w-80 border border-gray-600 rounded-md overflow-hidden"
+          >
+            <img
+              src="./images/reactjsBgImg.png"
+              alt="react.js image"
+              class="w-full h-48"
+            />
+            <div class="p-4 text-slate-800">
+              <h2 class="my-2 text-xl font-semibold">React JS</h2>
+              <p class="text-sm">
+                Build powerful web applications with <b>React</b>
+                a JavaScript library for building user interfaces.
+                <b>Develop reusable components, manage state</b>
+                and handle user input effectively. <b>Create fast</b>,
+                <b>scalable</b>, and maintainable web apps.
+                <a
+                  href="./pages/reactjsPage.html"
+                  class="ml-1 text-blue-500 hover:text-blue-700"
+                  >Read more...</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="w-full md:w-80 border border-gray-600 rounded-md overflow-hidden"
+          >
+            <img
+              src="./images/cBgImg.png"
+              alt="C programming image"
+              class="w-full h-48"
+            />
+            <div class="p-4 text-slate-800">
+              <h2 class="my-2 text-xl font-semibold">C Programming</h2>
+              <p class="text-sm">
+                Master the fundamentals of <b>C</b>, a powerful general-purpose
+                programming language used for system programming, embedded
+                systems, and developing operating systems.
+                <b>Write efficient code, manage memory</b>, and build complex
+                applicationsz. <b>Create fast</b>, <b>reliable</b>, and portable
+                software.
+                <a
+                  href="./pages/CPage.html"
+                  class="ml-1 text-blue-500 hover:text-blue-700"
+                  >Read more...</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="w-full md:w-80 border border-gray-600 rounded-md overflow-hidden"
+          >
+            <img
+              src="./images/cppBgImg.png"
+              alt="C++ image"
+              class="w-full h-48"
+            />
+            <div class="p-4 text-slate-800">
+              <h2 class="my-2 text-xl font-semibold">C++ Programming</h2>
+              <p class="text-sm">
+                Explore the advanced features of <b>C++</b>, an object-oriented
+                programming languagez that builds on C.
+                <b>Create high-performance applications</b>, develop reusable
+                classes, and manage resources efficiently. <b>Design robust</b>,
+                <b>scalable</b>, and extensible software systems.
+                <a
+                  href="./pages/CPage.html"
+                  class="ml-1 text-blue-500 hover:text-blue-700"
+                  >Read more...</a
+                >
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      <!-- Move to top button -->
       <a href="#" class="fixed bottom-4 right-4">
         <button
           class="px-4 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-700 transition duration-300"
@@ -227,9 +282,7 @@
         </button>
       </a>
 
-      <hr />
-      <!-- Footer -->
-      <footer class="bg-black text-white text-center py-4">
+      <footer class="bg-black text-white text-center py-4 mt-10">
         <p>Learn Hub | learn coding with learn hub</p>
         <div class="mt-2">
           <a
