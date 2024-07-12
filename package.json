@@ -4,12 +4,12 @@
   "description": "- Welcome to **Learn Hub!!** .  Learn hub is a online platform which consist of different computer language\r  - It aims to provide a comprehensive resource for developers and tech students to explore different language \r  - whether you're a beginner looking to get started with your first language or an experienced developer aiming to broaden your skill set, you'll find valuable content here",
   "main": "index.js",
   "scripts": {
-    "build:css": "tailwindcss build styles.css -o output.css"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "tailwindcss": "^3.4.4"
   }
 }
