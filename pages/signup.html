@@ -88,12 +88,54 @@
         </a>
       </div>
     </div>
-    <div class="flex justify-center items-center h-96">
-      <div class="rounded-md border-gray-200 w-96 h-96">
-        <h1>Sign-up | Learn Hub</h1>
+    <div class="flex justify-center items-center min-h-screen bg-gray-900">
+      <div class="rounded-md border p-5 w-80 md:w-96 bg-white">
+        <h1 class="text-2xl font-semibold text-center pb-5">
+          Sign-up | Learn Hub
+        </h1>
         <form>
+          <div class="mb-4">
+            <input
+              type="text"
+              placeholder="Your Name"
+              class="p-3 rounded-md w-full outline-none bg-gray-200"
+            />
+          </div>
+          <div class="mb-4">
+            <input
+              type="text"
+              placeholder="Your last name"
+              class="p-3 rounded-md w-full outline-none bg-gray-200"
+            />
+          </div>
+          <div class="mb-4">
+            <input
+              type="number"
+              placeholder="Your Phone number"
+              class="p-3 rounded-md w-full outline-none bg-gray-200"
+            />
+          </div>
+          <div class="mb-4">
+            <input
+              type="email"
+              placeholder="Your Email"
+              class="p-3 rounded-md w-full outline-none bg-gray-200"
+            />
+          </div>
           <div>
-            <input type="text" placeholder="Your Name" class="" />
+            <button
+              class="bg-red-600 hover:bg-red-700 p-3 rounded-md text-white w-full"
+            >
+              Sign up
+            </button>
+            <p class="text-center py-2 text-gray-800">Or</p>
+            <a href="login_page.html">
+              <p
+                class="text-blue-600 hover:text-blue-800 text-center cursor-pointer"
+              >
+                I already have an account
+              </p></a
+            >
           </div>
         </form>
       </div>
