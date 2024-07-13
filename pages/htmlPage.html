@@ -9,7 +9,7 @@
     />
     <title>HTML | Learn Hub</title>
   </head>
-  <body>
+  <body class="bg-gray-900 text-white">
     <div
       class="flex items-center justify-between p-3 px-2 md:px-5 text-white bg-black"
     >
@@ -90,5 +90,216 @@
         </a>
       </div>
     </div>
+
+    <div class="container mx-auto p-5">
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">Introduction to HTML</h2>
+        <p class="mb-4">
+          HTML (HyperText Markup Language) is the standard markup language for
+          creating web pages. It describes the structure of a web page using
+          elements represented by tags.
+        </p>
+        <p>
+          HTML elements are the building blocks of HTML pages. Elements are
+          represented by tags such as <code>&lt;h1&gt;</code>,
+          <code>&lt;p&gt;</code>, and <code>&lt;div&gt;</code>.
+        </p>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">HTML Headings</h2>
+        <p class="mb-4">
+          HTML headings are defined with the <code>&lt;h1&gt;</code> to
+          <code>&lt;h6&gt;</code> tags. <code>&lt;h1&gt;</code> defines the most
+          important heading, and <code>&lt;h6&gt;</code> defines the least
+          important heading.
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black">
+          <h1 class="text-4xl mb-2">This is an h1 heading</h1>
+          <h2 class="text-3xl mb-2">This is an h2 heading</h2>
+          <h3 class="text-2xl mb-2">This is an h3 heading</h3>
+          <h4 class="text-xl mb-2">This is an h4 heading</h4>
+          <h5 class="text-lg mb-2">This is an h5 heading</h5>
+          <h6 class="text-base">This is an h6 heading</h6>
+        </div>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">HTML Paragraphs</h2>
+        <p class="mb-4">
+          HTML paragraphs are defined with the <code>&lt;p&gt;</code> tag. A
+          paragraph always starts on a new line and browsers automatically add
+          some space (margin) before and after a paragraph.
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black">
+          <p class="mb-4">This is a paragraph.</p>
+          <p>This is another paragraph.</p>
+        </div>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">HTML Lists</h2>
+        <p class="mb-4">
+          HTML supports ordered (numbered) and unordered (bulleted) lists.
+          Ordered lists are created with the <code>&lt;ol&gt;</code> tag, and
+          unordered lists with the <code>&lt;ul&gt;</code> tag. List items are
+          defined with the <code>&lt;li&gt;</code> tag.
+        </p>
+        <div class="bg-white p-4 rounded shadow mb-4 text-black">
+          <h3 class="text-2xl mb-2">Unordered List</h3>
+          <ul class="list-disc ml-5">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ul>
+        </div>
+        <div class="bg-white p-4 rounded shadow text-black">
+          <h3 class="text-2xl mb-2">Ordered List</h3>
+          <ol class="list-decimal ml-5">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">HTML Links</h2>
+        <p class="mb-4">
+          HTML links are defined with the <code>&lt;a&gt;</code> tag. The
+          <code>href</code> attribute specifies the URL of the page the link
+          goes to.
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black">
+          <a href="https://www.example.com" class="text-blue-600 underline"
+            >Visit Example</a
+          >
+        </div>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">HTML Images</h2>
+        <p class="mb-4">
+          HTML images are defined with the <code>&lt;img&gt;</code> tag. The
+          <code>src</code> attribute specifies the path to the image, and the
+          <code>alt</code> attribute provides alternative text for the image.
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black">
+          <img
+            src="../images/html.png"
+            width="200px"
+            alt="Sample Image"
+            class="rounded"
+          />
+        </div>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">HTML Tables</h2>
+        <p class="mb-4">
+          HTML tables are defined with the <code>&lt;table&gt;</code> tag. A
+          table is divided into rows (<code>&lt;tr&gt;</code>), and each row is
+          divided into cells (<code>&lt;td&gt;</code>). Table headers are
+          defined with the <code>&lt;th&gt;</code> tag.
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black">
+          <table class="min-w-full divide-y divide-gray-200">
+            <thead class="bg-gray-50">
+              <tr>
+                <th
+                  class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                >
+                  Name
+                </th>
+                <th
+                  class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                >
+                  Age
+                </th>
+                <th
+                  class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                >
+                  City
+                </th>
+              </tr>
+            </thead>
+            <tbody class="bg-white divide-y divide-gray-200 text-black">
+              <tr>
+                <td class="px-6 py-4 whitespace-nowrap">John</td>
+                <td class="px-6 py-4 whitespace-nowrap">45</td>
+                <td class="px-6 py-4 whitespace-nowrap">New York</td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 whitespace-nowrap">Jane</td>
+                <td class="px-6 py-4 whitespace-nowrap">50</td>
+                <td class="px-6 py-4 whitespace-nowrap">Los Angeles</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">HTML Forms</h2>
+        <p class="mb-4">
+          HTML forms are used to collect user input. The
+          <code>&lt;form&gt;</code> element defines a form, and various form
+          elements like <code>&lt;input&gt;</code>,
+          <code>&lt;textarea&gt;</code>, and <code>&lt;button&gt;</code> are
+          used to create form fields.
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black">
+          <form>
+            <div class="mb-4">
+              <label for="name" class="block text-sm font-medium text-gray-700"
+                >Name</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              />
+            </div>
+            <div class="mb-4">
+              <label for="email" class="block text-sm font-medium text-gray-700"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              />
+            </div>
+            <div class="mb-4">
+              <label
+                for="message"
+                class="block text-sm font-medium text-gray-700"
+                >Message</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              ></textarea>
+            </div>
+            <div>
+              <button
+                type="submit"
+                class="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <footer class="bg-black text-white p-4 text-center">
+      <p>&copy; 2024 Learn Hub. All rights reserved.</p>
+    </footer>
   </body>
 </html>
