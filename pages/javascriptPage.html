@@ -1,153 +1,459 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-    href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-    rel="stylesheet"
-  />
-    <title>javascript</title>
-</head>
-<body>
-    <div>
-    <img src="./../images/learning.png" alt="icon" width="40px" />
-    <h1>Learn Hub</h1>
-    <hr/>
-    <div>
-        <a href="./../index.html"> Home </a> &nbsp; 
-        <a href="./HTML.html">Html</a> &nbsp;
-        <a href="./css.html">Css</a> &nbsp;
-        <a href="./../pages/javascriptPage.html">JavaScript</a> &nbsp;
-        <a href="./ReactjsPage.html">React js</a> &nbsp;
-        <a href="./cpage.html">C</a> &nbsp;
-        <a href="./CppPage.html">C++</a> &nbsp;
-        <a href="./PythonPage.html">Python</a> &nbsp;
-         <a href="./MySQL.html"> MySQL</a>&nbsp;
-         <a href="./java.html">Java</a> &nbsp;
-        <a href="./swift.html">Swift</a> &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp;
-        <a href="./signup.html"><button>Sign up</button></a>
-        <a href="./login_page.html"> <button>Login</button> </a>
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>JavaScript | Learn Hub</title>
+  </head>
+  <body class="bg-gray-900 text-white">
+    <div
+      class="flex items-center justify-between p-3 px-2 md:px-5 text-white bg-black"
+    >
+      <a href="../index.html">
+        <div class="flex items-center space-x-2">
+          <img src="../images/learning.png" alt="icon" width="35px" />
+          <h1 class="text-2xl font-bold">Learn Hub</h1>
+        </div>
+      </a>
+      <div class="hidden md:flex">
+        <a
+          href="../index.html"
+          class="hover:bg-red-600 p-3 cursor-pointer rounded-md transition duration-100 ease-in-out"
+          >Home</a
+        >
+        <a
+          href="htmlPage.html"
+          class="hover:bg-red-600 p-3 cursor-pointer rounded-md transition duration-100 ease-in-out"
+          >Html</a
+        >
+        <a
+          href="CssPage.html"
+          class="hover:bg-red-600 p-3 cursor-pointer rounded-md transition duration-100 ease-in-out"
+          >Css</a
+        >
+        <a
+          href="JavascriptPage.html"
+          class="hover:bg-red-600 p-3 cursor-pointer rounded-md transition duration-100 ease-in-out"
+          >JavaScript</a
+        >
+        <a
+          href="ReactjsPage.html"
+          class="hover:bg-red-600 p-3 cursor-pointer rounded-md transition duration-100 ease-in-out"
+          >React js</a
+        >
+        <a
+          href="CPage.html"
+          class="hover:bg-red-600 p-3 cursor-pointer rounded-md transition duration-100 ease-in-out"
+          >C</a
+        >
+        <a
+          href="CppPage.html"
+          class="hover:bg-red-600 p-3 cursor-pointer rounded-md transition duration-100 ease-in-out"
+          >C++</a
+        >
+        <a
+          href="PythonPage.html"
+          class="hover:bg-red-600 p-3 cursor-pointer rounded-md transition duration-100 ease-in-out"
+          >Python</a
+        >
+        <a
+          href="MysqlPage.html"
+          class="hover:bg-red-600 p-3 cursor-pointer rounded-md transition duration-100 ease-in-out"
+          >MySQL</a
+        >
+        <a
+          href="JavaPage.html"
+          class="hover:bg-red-600 p-3 cursor-pointer rounded-md transition duration-100 ease-in-out"
+          >Java</a
+        >
+        <a
+          href="SwiftPage.html"
+          class="hover:bg-red-600 p-3 cursor-pointer rounded-md transition duration-100 ease-in-out"
+          >Swift</a
+        >
       </div>
-    </div><hr>
-    <h1><img src="./../images/javascript-series.jpg"height="50">&nbsp;<u>JavaScript</u>&nbsp;
-        <img src="./../images/javascript-series.jpg"height="50"></h1><hr>
-    <img src="./../images/javascriptBgImg.jpg"height="200">
-        <h2><ul><li>JavaScript intoduction</li></ul></h2><hr>
-     <p>JavaScript Can Change HTML Content
-One of many JavaScript HTML methods is getElementById().avaScript was initially created to “make web pages alive”.
-
-The programs in this language are called scripts. They can be written right in a web page’s HTML and run automatically as the page loads.
-
-Scripts are provided and executed as plain text. They don’t need special preparation or compilation to run.
-
-In this aspect, JavaScript is very different from another language called Java.
-</p>
-<p>JavaScript is a scripting or programming language that allows you to implement complex features on web pages — every time a web page does more than just sit there and display static 
-    information for you to look at — displaying timely content updates, interactive maps, animated 2D/3D graphics, 
-    scrolling video jukeboxes, etc. — you can bet that JavaScript is probably involved.
-     It is the third layer of the layer cake of standard web technologies,
-      two of which (HTML and CSS) we have covered in much more detail in other parts of the Learning Area.
-</p><img src="./../images/javascript.png"height="300">
-<p><ul><li>
-    HTML is the markup language that we use to structure and give meaning to our web content, for example defining paragraphs, headings, and data tables, or embedding images and videos in the page.</li>
-<li>CSS is a language of style rules that we use to apply styling to our HTML content, for example setting background colors and fonts, and laying out our content in multiple columns.</li>
-<li>JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, 
-    animate images, and pretty much everything else.
-     (Okay, not everything, but it is amazing what you can achieve with a few lines of JavaScript code.)</li>
-</p><hr><h2><li>JavaScript Variables and Data type</li></h2><ul>
-Variables are Containers for Storing Data
-JavaScript Variables can be declared in 4 ways:
-
-Automatically
-<li>Using var</li>
-<li>Using let</li>
-<li>Using const</li></ul>
-In this first example, x, y, and z are undeclared variables.<br>
-x = 5;<br>
-y = 6;<br>
-z = x + y;<br><br>
-<h2>Data type</h2>
-JavaScript has 8 Datatypes:-<br><ol>
-<li>String</li>
-<li>Number</li>
-<li>Bigint</li>
-<li>Boolean</li>
-<li>Undefined</li>
-<li>Null</li>
-<li>Symbol</li>
-<li>Object</li>
-</ol>
-The Object Datatype
-The object data type can contain both built-in objects, and user defined objects:
-Built-in object types can be:
-objects, arrays, dates, maps, sets, intarrays, floatarrays, promises, and more.<br>
-The Concept of Data Types
-In programming, data types is an important concept.
-To be able to operate on variables, it is important to know something about the type.
-Without data types, a computer cannot safely solve this:
-<b>let x = 16 + "Volvo";</b><br><br>
-<b>Refers the following video for a guidence:</b><br>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ajdRvxDWH4w?si=yUydDYqLhg6wggjO" 
-title="YouTube video player" frameborder="0"
- allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
- referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<br>
-<hr><ul><h2><li>JavaScript Comment</li></h2></ul>
-<b>Single Line Comments:-</b>&nbsp;Single line comments start with //.<br>
-Any text between // and the end of the line will be ignored by JavaScript (will not be executed).
-This example uses a single-line comment before each code line:<br>
-Example:-&nbsp;<br>
-// Change heading:<br>
-document.getElementById("myH").innerHTML = "My First Page";<br>
-// Change paragraph:<br>
-document.getElementById("myP").innerHTML = "My first paragraph.";<br>
-This example uses a single line comment at the end of each line to explain the code:<br>
-<p>
-Example<br>
-let x = 5;      // Declare x, give it the value of 5<br>
-let y = x + 2;  // Declare y, give it the value of x + 2<br>
-</p>
-<b>Multi-line:-</b>&nbsp;Multi-line comments start with /* and end with */.
-Any text between /* and */ will be ignored by JavaScript.
-This example uses a multi-line comment (a comment block) to explain the code:
-<p>
-Example<br>
-/*
-The code below will change<br>
-the heading with id = "myH"<br>
-and the paragraph with id = "myP"<br>
-in my web page:
-*/<br>
-document.getElementById("myH").innerHTML = "My First Page";<br>
-document.getElementById("myP").innerHTML = "My first paragraph.";<br>
-</p><hr><ul><h2><li>JavaScript operaters</li></h2></ul><br>
-<img src="./../images/JavaScript-Operators.png"height="300"><br>
-<hr>
-<b>For more knowledge refers the following link:-</b>&nbsp;
-<a href="https://www.w3schools.com/js/default.asp">Link</a>
-<hr />
-    <a href="./javascript.html">
-      <button>Move to top ⬆</button>
-    </a>
-    <br />
-    <hr />
-<footer>
-    <div>
-      <p>Learn Hub | learn coding with learn hub</p>
-      <div>
-        <a href="https://www.facebook.com" target="_blank">Facebook</a> &nbsp;
-        | &nbsp;
-        <a href="https://www.twitter.com" target="_blank">Twitter</a> &nbsp; |
-        &nbsp;
-        <a href="https://www.instagram.com" target="_blank">Instagram</a>
-        &nbsp; | &nbsp;
-        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+      <div class="flex items-center space-x-2">
+        <a
+          href="SignupPage.html"
+          class="p-3 bg-white text-black rounded-md hover:bg-gray-100 text-sm"
+          ><button>Sign up</button></a
+        >
+        <a
+          href="LoginPage.html"
+          class="p-3 bg-red-600 text-white rounded-md hover:bg-red-700 transition duration-100 ease-in-out text-sm"
+        >
+          <button>Login</button>
+        </a>
       </div>
     </div>
-  </footer>
 
-    
-</body>
+    <div class="container mx-auto p-5">
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">Introduction to JavaScript</h2>
+        <p class="mb-4">
+          JavaScript is a versatile, high-level programming language that
+          enables you to create dynamic and interactive web pages. It is one of
+          the core technologies of the World Wide Web, alongside HTML and CSS.
+        </p>
+        <p>
+          JavaScript can be used to add functionality to websites, create games,
+          and build web applications.
+        </p>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">JavaScript Basics</h2>
+        <p class="mb-4">
+          Before diving into advanced topics, let's cover some fundamental
+          concepts of JavaScript.
+        </p>
+
+        <div class="mb-6">
+          <h3 class="text-2xl font-semibold mb-2">Variables</h3>
+          <p class="mb-2">
+            Variables are used to store data values. In JavaScript, you can
+            declare variables using <code>var</code>, <code>let</code>, or
+            <code>const</code>.
+          </p>
+          <div class="bg-white p-4 rounded shadow text-black">
+            <code>
+              var x = 5;<br />
+              let y = 10;<br />
+              const z = 15;
+            </code>
+          </div>
+        </div>
+
+        <div class="mb-6">
+          <h3 class="text-2xl font-semibold mb-2">Data Types</h3>
+          <p class="mb-2">JavaScript supports various data types, including:</p>
+          <ul class="list-disc ml-5 mb-2">
+            <li>String</li>
+            <li>Number</li>
+            <li>Boolean</li>
+            <li>Object</li>
+            <li>Array</li>
+            <li>Undefined</li>
+            <li>Null</li>
+          </ul>
+          <div class="bg-white p-4 rounded shadow text-black">
+            <code>
+              let name = "John";<br />
+              let age = 30;<br />
+              let isStudent = true;<br />
+              let person = { firstName: "John", lastName: "Doe" };<br />
+              let numbers = [1, 2, 3, 4, 5];<br />
+              let x;<br />
+              let y = null;
+            </code>
+          </div>
+        </div>
+
+        <div class="mb-6">
+          <h3 class="text-2xl font-semibold mb-2">Operators</h3>
+          <p class="mb-2">JavaScript includes various operators, such as:</p>
+          <ul class="list-disc ml-5 mb-2">
+            <li>Arithmetic Operators (e.g., +, -, *, /)</li>
+            <li>Comparison Operators (e.g., ==, ===, !=, !==, >, <)</li>
+            <li>Logical Operators (e.g., &&, ||, !)</li>
+            <li>Assignment Operators (e.g., =, +=, -=, *=, /=)</li>
+          </ul>
+          <div class="bg-white p-4 rounded shadow text-black">
+            <code>
+              let sum = 5 + 10;<br />
+              let isEqual = (5 === 5);<br />
+              let isLoggedIn = true && false;<br />
+              let count = 1;<br />
+              count += 5;
+            </code>
+          </div>
+        </div>
+
+        <div class="mb-6">
+          <h3 class="text-2xl font-semibold mb-2">Functions</h3>
+          <p class="mb-2">
+            Functions are blocks of code designed to perform particular tasks.
+            You can define a function using the <code>function</code> keyword.
+          </p>
+          <div class="bg-white p-4 rounded shadow text-black">
+            <code>
+              function greet(name) {<br />
+              &nbsp;&nbsp;return "Hello, " + name;<br />
+              }<br />
+              let message = greet("John");
+            </code>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">JavaScript Events</h2>
+        <p class="mb-4">
+          Events are actions or occurrences that happen in the web browser,
+          which JavaScript can react to. Examples of events include clicking a
+          button, submitting a form, or loading a page.
+        </p>
+        <div class="mb-6">
+          <h3 class="text-2xl font-semibold mb-2">Handling Events</h3>
+          <p class="mb-2">
+            You can handle events using event listeners. Here is an example of
+            handling a button click event:
+          </p>
+          <div class="bg-white p-4 rounded shadow text-black">
+            <code>
+              &lt;button onclick="showAlert()"&gt;Click Me&lt;/button&gt;<br /><br />
+              function showAlert() {<br />
+              &nbsp;&nbsp;alert("Button was clicked!");<br />
+              }
+            </code>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">JavaScript DOM Manipulation</h2>
+        <p class="mb-4">
+          The Document Object Model (DOM) is a programming interface for web
+          documents. It represents the structure of a document as a tree of
+          objects. JavaScript can be used to manipulate the DOM, allowing you to
+          change the content, structure, and style of a webpage dynamically.
+        </p>
+        <div class="mb-6">
+          <h3 class="text-2xl font-semibold mb-2">Selecting Elements</h3>
+          <p class="mb-2">
+            You can select elements using methods like
+            <code>getElementById</code>, <code>getElementsByClassName</code>,
+            <code>getElementsByTagName</code>, and <code>querySelector</code>.
+          </p>
+          <div class="bg-white p-4 rounded shadow text-black">
+            <code>
+              let element = document.getElementById("myElement");<br />
+              let elements = document.getElementsByClassName("myClass");<br />
+              let tags = document.getElementsByTagName("div");<br />
+              let selected = document.querySelector(".myClass");
+            </code>
+          </div>
+        </div>
+
+        <div class="mb-6">
+          <h3 class="text-2xl font-semibold mb-2">Changing Content</h3>
+          <p class="mb-2">
+            You can change the content of an element using properties like
+            <code>innerHTML</code>, <code>innerText</code>, and
+            <code>textContent</code>.
+          </p>
+          <div class="bg-white p-4 rounded shadow text-black">
+            <code>
+              document.getElementById("myElement").innerHTML = "New Content";<br />
+              document.getElementById("myElement").innerText = "New Text";<br />
+              document.getElementById("myElement").textContent = "New Text
+              Content";
+            </code>
+          </div>
+        </div>
+
+        <div class="mb-6">
+          <h3 class="text-2xl font-semibold mb-2">Changing Styles</h3>
+          <p class="mb-2">
+            You can change the style of an element using the
+            <code>style</code> property.
+          </p>
+          <div class="bg-white p-4 rounded shadow text-black">
+            <code>
+              document.getElementById("myElement").style.color = "red";<br />
+              document.getElementById("myElement").style.backgroundColor =
+              "blue";
+            </code>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">JavaScript Arrays</h2>
+        <p class="mb-4">
+          Arrays are used to store multiple values in a single variable. They
+          are a fundamental part of JavaScript and offer many useful methods.
+        </p>
+        <div class="mb-6">
+          <h3 class="text-2xl font-semibold mb-2">Creating Arrays</h3>
+          <p class="mb-2">
+            You can create arrays using the array literal notation or the
+            <code>Array</code> constructor.
+          </p>
+          <div class="bg-white p-4 rounded shadow text-black">
+            <code>
+              let fruits = ["Apple", "Banana", "Orange"];<br />
+              let numbers = new Array(1, 2, 3, 4, 5);
+            </code>
+          </div>
+        </div>
+
+        <div class="mb-6">
+          <h3 class="text-2xl font-semibold mb-2">Array Methods</h3>
+          <p class="mb-2">
+            JavaScript arrays come with several built-in methods for
+            manipulating and accessing elements.
+          </p>
+          <ul class="list-disc ml-5 mb-2">
+            <li>
+              <code>push()</code> - Adds an element to the end of an array.
+            </li>
+            <li>
+              <code>pop()</code> - Removes the last element from an array.
+            </li>
+            <li>
+              <code>shift()</code> - Removes the first element from an array.
+            </li>
+            <li>
+              <code>unshift()</code> - Adds an element to the beginning of an
+              array.
+            </li>
+            <li>
+              <code>forEach()</code> - Calls a function for each element in an
+              array.
+            </li>
+            <li>
+              <code>map()</code> - Creates a new array with the results of
+              calling a function on every element in the array.
+            </li>
+            <li>
+              <code>filter()</code> - Creates a new array with all elements that
+              pass a test.
+            </li>
+          </ul>
+          <div class="bg-white p-4 rounded shadow text-black">
+            <code>
+              let fruits = ["Apple", "Banana", "Orange"];<br />
+              fruits.push("Grape");<br />
+              fruits.pop();<br />
+              fruits.shift();<br />
+              fruits.unshift("Strawberry");<br />
+              fruits.forEach(function(fruit) {<br />
+              &nbsp;&nbsp;console.log(fruit);<br />
+              });<br />
+              let uppercasedFruits = fruits.map(function(fruit) {<br />
+              &nbsp;&nbsp;return fruit.toUpperCase();<br />
+              });<br />
+              let filteredFruits = fruits.filter(function(fruit) {<br />
+              &nbsp;&nbsp;return fruit.startsWith("A");<br />
+              });
+            </code>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">JavaScript Objects</h2>
+        <p class="mb-4">
+          Objects are collections of key-value pairs. They are a fundamental
+          part of JavaScript and allow you to store related data and functions
+          together.
+        </p>
+        <div class="mb-6">
+          <h3 class="text-2xl font-semibold mb-2">Creating Objects</h3>
+          <p class="mb-2">
+            You can create objects using the object literal notation or the
+            <code>Object</code> constructor.
+          </p>
+          <div class="bg-white p-4 rounded shadow text-black">
+            <code>
+              let person = {<br />
+              &nbsp;&nbsp;firstName: "John",<br />
+              &nbsp;&nbsp;lastName: "Doe",<br />
+              &nbsp;&nbsp;age: 30<br />
+              };<br />
+              let car = new Object();<br />
+              car.make = "Toyota";<br />
+              car.model = "Camry";
+            </code>
+          </div>
+        </div>
+
+        <div class="mb-6">
+          <h3 class="text-2xl font-semibold mb-2">
+            Accessing Object Properties
+          </h3>
+          <p class="mb-2">
+            You can access object properties using dot notation or bracket
+            notation.
+          </p>
+          <div class="bg-white p-4 rounded shadow text-black">
+            <code>
+              let person = {<br />
+              &nbsp;&nbsp;firstName: "John",<br />
+              &nbsp;&nbsp;lastName: "Doe",<br />
+              &nbsp;&nbsp;age: 30<br />
+              };<br />
+              let firstName = person.firstName;<br />
+              let lastName = person["lastName"];
+            </code>
+          </div>
+        </div>
+
+        <div class="mb-6">
+          <h3 class="text-2xl font-semibold mb-2">Object Methods</h3>
+          <p class="mb-2">
+            Objects can also have methods, which are functions stored as object
+            properties.
+          </p>
+          <div class="bg-white p-4 rounded shadow text-black">
+            <code>
+              let person = {<br />
+              &nbsp;&nbsp;firstName: "John",<br />
+              &nbsp;&nbsp;lastName: "Doe",<br />
+              &nbsp;&nbsp;age: 30,<br />
+              &nbsp;&nbsp;fullName: function() {<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;return this.firstName + " " +
+              this.lastName;<br />
+              &nbsp;&nbsp;}<br />
+              };<br />
+              let name = person.fullName();
+            </code>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <a href="#" class="fixed bottom-4 right-4">
+      <div
+        class="px-4 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-700 transition duration-300"
+      >
+        <img src="../images/move.png" width="20px" title="Go to Top" />
+      </div>
+    </a>
+
+    <footer class="bg-black text-white text-center py-4">
+      <p>Learn Hub | learn coding with learn hub</p>
+      <div class="mt-2">
+        <a
+          href="https://www.facebook.com"
+          target="_blank"
+          class="text-blue-500 hover:text-blue-700 mx-2"
+          >Facebook</a
+        >
+        <a
+          href="https://www.twitter.com"
+          target="_blank"
+          class="text-blue-500 hover:text-blue-700 mx-2"
+          >Twitter</a
+        >
+        <a
+          href="https://www.instagram.com"
+          target="_blank"
+          class="text-blue-500 hover:text-blue-700 mx-2"
+          >Instagram</a
+        >
+        <a
+          href="https://www.linkedin.com"
+          target="_blank"
+          class="text-blue-500 hover:text-blue-700 mx-2"
+          >LinkedIn</a
+        >
+      </div>
+    </footer>
+  </body>
 </html>
