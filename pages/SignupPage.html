@@ -7,7 +7,7 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
-    <title>Login | Learn hub</title>
+    <title>sign-up | Learn hub</title>
   </head>
   <body class="bg-gray-900 min-h-screen flex items-center justify-center">
     <div
@@ -26,17 +26,17 @@
           >Home</a
         >
         <a
-          href="HTML.html"
+          href="htmlPage.html"
           class="hover:bg-red-600 p-3 cursor-pointer rounded-md transition duration-100 ease-in-out"
           >Html</a
         >
         <a
-          href="css.html"
+          href="CssPage.html"
           class="hover:bg-red-600 p-3 cursor-pointer rounded-md transition duration-100 ease-in-out"
           >Css</a
         >
         <a
-          href="javascriptPage.html"
+          href="JavascriptPage.html"
           class="hover:bg-red-600 p-3 cursor-pointer rounded-md transition duration-100 ease-in-out"
           >JavaScript</a
         >
@@ -61,29 +61,29 @@
           >Python</a
         >
         <a
-          href="MySQL.html"
+          href="MysqlPage.html"
           class="hover:bg-red-600 p-3 cursor-pointer rounded-md transition duration-100 ease-in-out"
           >MySQL</a
         >
         <a
-          href="java.html"
+          href="JavaPage.html"
           class="hover:bg-red-600 p-3 cursor-pointer rounded-md transition duration-100 ease-in-out"
           >Java</a
         >
         <a
-          href="swift.html"
+          href="SwiftPage.html"
           class="hover:bg-red-600 p-3 cursor-pointer rounded-md transition duration-100 ease-in-out"
           >Swift</a
         >
       </div>
       <div class="flex items-center space-x-2">
         <a
-          href="signup.html"
+          href="SignupPage.html"
           class="p-3 bg-white text-black rounded-md hover:bg-gray-100 text-sm"
           ><button>Sign up</button></a
         >
         <a
-          href="login_page.html"
+          href="LoginPage.html"
           class="p-3 bg-red-600 text-white rounded-md hover:bg-red-700 transition duration-100 ease-in-out text-sm"
         >
           <button>Login</button>
@@ -95,42 +95,63 @@
     >
       <a
         href="../index.html"
-        class="text-white cursor-pointer absolute top-24 left-5 flex items-center bg-gray-200 hover:bg-gray-300 rounded-md p-1"
+        class="text-white cursor-pointer absolute md:top-24 top-20 md:left-5 left-2 flex items-center bg-gray-200 hover:bg-gray-300 rounded-md p-1"
       >
         <img src="../images/home.png" width="20px" />
         <p class="ml-1 text-black">Home</p>
       </a>
       <div class="rounded-md border p-5 w-80 md:w-2/5 bg-white">
         <h1 class="text-2xl font-semibold text-center pb-5">
-          Login | Learn Hub
+          Sign-up | Learn Hub
         </h1>
         <form>
-          <div class="mb-4">
+          <div class="md:mb-4 mb-2">
+            <input
+              type="text"
+              placeholder="Your Name"
+              class="md:p-3 p-2 rounded-md w-full outline-none bg-gray-200"
+            />
+          </div>
+          <div class="md:mb-4 mb-2">
+            <input
+              type="text"
+              placeholder="Your last name"
+              class="md:p-3 p-2 rounded-md w-full outline-none bg-gray-200"
+            />
+          </div>
+          <div class="md:mb-4 mb-2">
+            <input
+              type="number"
+              placeholder="Your Phone number"
+              class="md:p-3 p-2 rounded-md w-full outline-none bg-gray-200"
+            />
+          </div>
+          <div class="mb-2 md:mb-4">
             <input
               type="email"
               placeholder="Your Email"
-              class="p-3 rounded-md w-full outline-none bg-gray-200"
+              class="md:p-3 p-2 rounded-md w-full outline-none bg-gray-200"
             />
           </div>
-          <div class="mb-4">
+          <div class="md:mb-4 mb-2">
             <input
               type="password"
-              placeholder="Your Password"
-              class="p-3 rounded-md w-full outline-none bg-gray-200"
+              placeholder="Set Your Password"
+              class="md:p-3 p-2 rounded-md w-full outline-none bg-gray-200"
             />
           </div>
           <div>
             <button
-              class="bg-red-600 hover:bg-red-700 p-3 rounded-md text-white w-full"
+              class="bg-red-600 hover:bg-red-700 md:p-3 p-2 rounded-md text-white w-full"
             >
-              Login
+              Sign up
             </button>
-            <p class="text-center py-2 text-gray-800">Or</p>
-            <a href="signup.html">
+            <p class="text-center md:py-2 py-1 text-gray-800">Or</p>
+            <a href="LoginPage.html">
               <p
                 class="text-blue-600 hover:text-blue-800 text-center cursor-pointer"
               >
-                I have no account create a new account
+                I already have an account
               </p></a
             >
           </div>
