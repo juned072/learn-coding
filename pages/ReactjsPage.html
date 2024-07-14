@@ -285,6 +285,172 @@
           </code>
         </div>
       </section>
+
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">Handling Events</h2>
+        <p class="mb-4">
+          Handling events with React elements is very similar to handling events
+          on DOM elements. There are some syntax differences, such as using
+          camelCase for event names instead of lowercase.
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black mb-4">
+          <code>
+            function ActionLink() {<br />
+            &nbsp;&nbsp;function handleClick(e) {<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;e.preventDefault();<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;console.log('The link was clicked.');<br />
+            &nbsp;&nbsp;}<br /><br />
+            &nbsp;&nbsp;return (<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" onClick={handleClick}&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Click me<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br />
+            &nbsp;&nbsp;);<br />
+            }
+          </code>
+        </div>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">Conditional Rendering</h2>
+        <p class="mb-4">
+          In React, you can create distinct components that encapsulate the
+          behavior you need. Then, you can render only some of them depending on
+          the state of your application.
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black mb-4">
+          <code>
+            function Greeting(props) {<br />
+            &nbsp;&nbsp;const isLoggedIn = props.isLoggedIn;<br />
+            &nbsp;&nbsp;if (isLoggedIn) {<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;return &lt;h1&gt;Welcome
+            back!&lt;/h1&gt;;<br />
+            &nbsp;&nbsp;}<br />
+            &nbsp;&nbsp;return &lt;h1&gt;Please sign up.&lt;/h1&gt;;<br />
+            }
+          </code>
+        </div>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">Lists and Keys</h2>
+        <p class="mb-4">
+          You can build collections of elements and include them in JSX using
+          curly braces <code>{}</code>. Keys help React identify which items
+          have changed, are added, or are removed.
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black mb-4">
+          <code>
+            function NumberList(props) {<br />
+            &nbsp;&nbsp;const numbers = props.numbers;<br />
+            &nbsp;&nbsp;const listItems = numbers.map((number) =><br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li key={number.toString()}&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{number}<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br />
+            &nbsp;&nbsp;);<br /><br />
+            &nbsp;&nbsp;return (<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{listItems}<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br />
+            &nbsp;&nbsp;);<br />
+            }
+          </code>
+        </div>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">Forms</h2>
+        <p class="mb-4">
+          Forms in React work similarly to forms in HTML. The main difference is
+          that in React, form elements keep some internal state.
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black mb-4">
+          <code>
+            class NameForm extends React.Component {<br />
+            &nbsp;&nbsp;constructor(props) {<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;super(props);<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;this.state = {value: ''};<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;this.handleChange =
+            this.handleChange.bind(this);<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;this.handleSubmit =
+            this.handleSubmit.bind(this);<br />
+            &nbsp;&nbsp;}<br /><br />
+            &nbsp;&nbsp;handleChange(event) {<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;this.setState({value:
+            event.target.value});<br />
+            &nbsp;&nbsp;}<br /><br />
+            &nbsp;&nbsp;handleSubmit(event) {<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;alert('A name was submitted: ' +
+            this.state.value);<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;event.preventDefault();<br />
+            &nbsp;&nbsp;}<br /><br />
+            &nbsp;&nbsp;render() {<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;return (<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;form
+            onSubmit={this.handleSubmit}&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name:<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input
+            type="text" value={this.state.value} onChange={this.handleChange}
+            /&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/label&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input
+            type="submit" value="Submit" /&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;);<br />
+            &nbsp;&nbsp;}<br />
+            }
+          </code>
+        </div>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">Lifting State Up</h2>
+        <p class="mb-4">
+          In React, it is common for several components to need to reflect the
+          same changing data. We recommend lifting the shared state up to their
+          closest common ancestor.
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black mb-4">
+          <code>
+            function BoilingVerdict(props) {<br />
+            &nbsp;&nbsp;if (props.celsius >= 100) {<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;return &lt;p&gt;The water would
+            boil.&lt;/p&gt;;<br />
+            &nbsp;&nbsp;}<br />
+            &nbsp;&nbsp;return &lt;p&gt;The water would not boil.&lt;/p&gt;;<br />
+            }
+          </code>
+        </div>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">Composition vs Inheritance</h2>
+        <p class="mb-4">
+          React has a powerful composition model, and we recommend using
+          composition instead of inheritance to reuse code between components.
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black mb-4">
+          <code>
+            function FancyBorder(props) {<br />
+            &nbsp;&nbsp;return (<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div className={'FancyBorder
+            FancyBorder-' + props.color}&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{props.children}<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+            &nbsp;&nbsp;);<br />
+            }
+          </code>
+        </div>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">Thinking in React</h2>
+        <p class="mb-4">
+          React encourages you to build your applications in a way that is
+          modular, maintainable, and scalable. The best way to do this is by
+          breaking your application down into small, reusable components.
+        </p>
+      </section>
     </div>
 
     <a href="#" class="fixed bottom-4 right-4">
