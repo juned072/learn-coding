@@ -181,6 +181,212 @@
           <p class="ml-2 text-gray-100">Home</p></span
         ></a
       >
+      <section class="mb-10 mt-5">
+        <h2 class="text-3xl font-bold mb-4">Introduction to C Programming</h2>
+        <p class="mb-4">
+          C is a general-purpose programming language that is extremely popular,
+          simple, and flexible. It allows you to build low-level programming
+          operations and has a wide range of applications.
+        </p>
+      </section>
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">Getting Started</h2>
+        <p class="mb-4">
+          Before you start coding in C, ensure you have a C compiler installed
+          on your system. You can use GCC, which is a widely-used compiler, or
+          any other compiler that suits your need.
+        </p>
+        <p class="mb-4">Here is a simple C program to get you started:</p>
+        <div class="bg-white p-4 rounded shadow text-black">
+          <pre><code class="language-c">
+#include &lt;stdio.h&gt;
+int main() {
+printf("Hello, World!");
+return 0;
+}
+          </code></pre>
+        </div>
+      </section>
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">C Syntax</h2>
+        <p class="mb-4">
+          The syntax of C includes several elements like keywords, operators,
+          and data types. Below are some basics:
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black">
+          <h3 class="text-2xl mb-2">Keywords</h3>
+          <p class="mb-4">
+            Keywords are reserved words that have special meanings in C.
+            Examples include <code>int</code>, <code>return</code>,
+            <code>if</code>, and <code>else</code>.
+          </p>
+          <h3 class="text-2xl mb-2">Operators</h3>
+          <p class="mb-4">
+            Operators are symbols that perform operations on variables and
+            values. Common operators include <code>+</code> (addition),
+            <code>-</code> (subtraction), and <code>=</code> (assignment).
+          </p>
+          <h3 class="text-2xl mb-2">Data Types</h3>
+          <p class="mb-4">
+            Data types specify the type of data that a variable can hold. Common
+            data types in C include <code>int</code>, <code>float</code>,
+            <code>char</code>, and <code>double</code>.
+          </p>
+        </div>
+      </section>
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">Control Structures</h2>
+        <p class="mb-4">
+          Control structures in C allow you to control the flow of the program.
+          They include conditional statements like <code>if</code>,
+          <code>else</code>, <code>switch</code>, and loops like
+          <code>for</code>, <code>while</code>, and <code>do-while</code>.
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black">
+          <h3 class="text-2xl mb-2">Conditional Statements</h3>
+          <pre><code class="language-c">
+#include &lt;stdio.h&gt;
+
+int main() {
+    int num = 10;
+if (num > 0) {
+  printf("Number is positive");
+  } else {
+  printf("Number is not positive");
+    }
+
+    return 0;
+}
+          </code></pre>
+          <h3 class="text-2xl mb-2">Loops</h3>
+          <pre><code class="language-c">
+#include &lt;stdio.h&gt;
+
+int main() {
+    int i;
+  for (i = 0; i < 5; i++) {
+      printf("%d ", i);
+    }
+    return 0;
+}
+          </code></pre>
+        </div>
+      </section>
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">Functions</h2>
+        <p class="mb-4">
+          Functions in C allow you to break down your code into smaller,
+          reusable components. You can define functions to perform specific
+          tasks and call them as needed.
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black">
+          <pre><code class="language-c">
+#include &lt;stdio.h&gt;
+
+void greet() {
+    printf("Hello, World!");
+}
+
+int main() {
+    greet();
+    return 0;
+}
+          </code></pre>
+        </div>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">Arrays</h2>
+        <p class="mb-4">
+          Arrays in C allow you to store multiple values of the same type in a
+          single variable. You can access elements in an array using their
+          index.
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black">
+          <pre><code class="language-c">
+#include &lt;stdio.h&gt;
+
+int main() {
+  int numbers[5] = {1, 2, 3, 4, 5};
+    int i;
+   for (i = 0; i < 5; i++) {
+       printf("%d ", numbers[i]);
+    }
+
+    return 0;
+}
+          </code></pre>
+        </div>
+      </section>
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">File I/O</h2>
+        <p class="mb-4">
+          C provides functions to handle file operations like reading, writing,
+          and closing files.
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black">
+          <pre><code class="language-c">
+#include &lt;stdio.h&gt;
+
+int main() {
+    FILE *file;
+    file = fopen("test.txt", "w");
+
+  if (file != NULL) {
+    fprintf(file, "Hello, World!");
+      fclose(file);
+    }
+
+    return 0;
+}
+          </code></pre>
+        </div>
+      </section>
     </div>
+
+    <a href="#" class="fixed bottom-4 right-4">
+      <div
+        class="px-4 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-700 transition duration-300"
+      >
+        <img src="../images/move.png" width="20px" title="Go to Top" />
+      </div>
+    </a>
+
+    <footer class="bg-black text-white text-center py-4">
+      <p>Learn Hub | learn coding with learn hub</p>
+      <div class="mt-2">
+        <a
+          href="https://www.facebook.com"
+          target="_blank"
+          class="text-blue-500 hover:text-blue-700 mx-2"
+          >Facebook</a
+        >
+        <a
+          href="https://www.twitter.com"
+          target="_blank"
+          class="text-blue-500 hover:text-blue-700 mx-2"
+          >Twitter</a
+        >
+        <a
+          href="https://www.instagram.com"
+          target="_blank"
+          class="text-blue-500 hover:text-blue-700 mx-2"
+          >Instagram</a
+        >
+        <a
+          href="https://www.linkedin.com"
+          target="_blank"
+          class="text-blue-500 hover:text-blue-700 mx-2"
+          >LinkedIn</a
+        >
+      </div>
+    </footer>
   </body>
+  <script>
+    document
+      .getElementById("menu-toggle")
+      .addEventListener("click", function () {
+        document.getElementById("menu").classList.toggle("hidden");
+      });
+  </script>
 </html>
