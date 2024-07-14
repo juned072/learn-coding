@@ -272,6 +272,7 @@ int main() {
           </code></pre>
         </div>
       </section>
+
       <section class="mb-10">
         <h2 class="text-3xl font-bold mb-4">Functions</h2>
         <p class="mb-4">
@@ -289,6 +290,30 @@ void greet() {
 
 int main() {
     greet();
+    return 0;
+}
+          </code></pre>
+        </div>
+      </section>
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">Pointers</h2>
+        <p class="mb-4">
+          Pointers are variables that store the memory address of another
+          variable. They are powerful but require careful handling.
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black">
+          <pre><code class="language-c">
+#include &lt;stdio.h&gt;
+
+int main() {
+  int var = 20;
+  int *ptr;
+  ptr = var;
+
+printf("Value of var: %d\n", var);
+printf("Address of var: %p\n", ptr);
+printf("Value at the address <br> stored in ptr: %d\n", *ptr);
+
     return 0;
 }
           </code></pre>
