@@ -204,7 +204,216 @@
 #include &lt;iostream&gt;
 
 int main() {
-    std::cout &lt;&lt; "Hello, World!" &lt;&lt; std::endl;
+    std::cout &lt;&lt; "Hello, <br> World!" &lt;&lt; std::endl;
+    return 0;
+}
+          </code></pre>
+        </div>
+      </section>
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">C++ Syntax</h2>
+        <p class="mb-4">
+          The syntax of C++ includes several elements like keywords, operators,
+          and data types. Below are some basics:
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black">
+          <h3 class="text-2xl mb-2">Keywords</h3>
+          <p class="mb-4">
+            Keywords are reserved words that have special meanings in C++.
+            Examples include <code>int</code>, <code>return</code>,
+            <code>if</code>, <code>else</code>, <code>while</code>,
+            <code>for</code>, etc.
+          </p>
+          <h3 class="text-2xl mb-2">Operators</h3>
+          <p class="mb-4">
+            Operators are symbols that perform operations on variables and
+            values. Common operators include <code>+</code> (addition),
+            <code>-</code> (subtraction), <code>=</code> (assignment).
+          </p>
+          <h3 class="text-2xl mb-2">Data Types</h3>
+          <p class="mb-4">
+            Data types specify the type of data that a variable can hold. Common
+            data types in C++ include <code>int</code>, <code>float</code>,
+            <code>char</code>, <code>double</code>, and <code>bool</code>.
+          </p>
+        </div>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">Control Structures</h2>
+        <p class="mb-4">
+          Control structures in C++ allow you to control the flow of the
+          program. They include conditional statements like <code>if</code>,
+          <code>else</code>, <code>switch</code>, and loops like
+          <code>for</code>, <code>while</code>, and <code>do-while</code>.
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black">
+          <h3 class="text-2xl mb-2">Conditional Statements</h3>
+          <pre><code class="language-cpp">
+#include &lt;iostream&gt;
+
+int main() {
+    int num = 10;
+
+    if (num > 0) {
+        std::cout &lt;&lt; "Number <br> is positive" &lt;&lt; std::endl;
+    } else {
+        std::cout &lt;&lt; "Number <br> is not positive" &lt;&lt; std::endl;
+    }
+
+    return 0;
+}
+          </code></pre>
+          <h3 class="text-2xl mb-2">Loops</h3>
+          <pre><code class="language-cpp">
+#include &lt;iostream&gt;
+
+int main() {
+    for (int i = 0; i < 5; i++) {
+        std::cout &lt;&lt; i &lt;&lt; " ";
+    }
+    std::cout &lt;&lt; std::endl;
+
+    return 0;
+}
+          </code></pre>
+        </div>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">Functions</h2>
+        <p class="mb-4">
+          Functions in C++ allow you to break down your code into smaller,
+          reusable components. You can define functions to perform specific
+          tasks and call them as needed.
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black">
+          <pre><code class="language-cpp">
+#include &lt;iostream&gt;
+
+void greet() {
+    std::cout &lt;&lt; "Hello, World!" <br> &lt;&lt; std::endl;
+}
+
+int main() {
+    greet();
+    return 0;
+}
+          </code></pre>
+        </div>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">Arrays</h2>
+        <p class="mb-4">
+          Arrays in C++ allow you to store multiple values of the same type in a
+          single variable. You can access elements in an array using their
+          index.
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black">
+          <pre><code class="language-cpp">
+#include &lt;iostream&gt;
+
+int main() {
+  int numbers[5] = {1, 2, 3, 4, 5};
+
+    for (int i = 0; i < 5; i++) {
+        std::cout &lt;&lt; <br> numbers[i] &lt;&lt; " ";
+    }
+    std::cout &lt;&lt; std::endl;
+
+    return 0;
+}
+          </code></pre>
+        </div>
+      </section>
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">Pointers</h2>
+        <p class="mb-4">
+          Pointers are variables that store the memory address of another
+          variable. They are powerful but require careful handling.
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black">
+          <pre><code class="language-cpp">
+#include &lt;iostream&gt;
+
+int main() {
+    int var = 20;
+    int *ptr = var;
+
+    std::cout &lt;&lt; "Value of var: <br> " &lt;&lt; var &lt;&lt; std::endl;
+    std::cout &lt;&lt; "Address of var: <br> " &lt;&lt; ptr &lt;&lt; std::endl;
+    std::cout &lt;&lt; "Value at the <br> address stored in ptr: <br> " &lt;&lt; *ptr &lt;&lt; std::endl;
+
+    return 0;
+}
+          </code></pre>
+        </div>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">Classes and Objects</h2>
+        <p class="mb-4">
+          Classes are user-defined data types that act as blueprints for
+          objects. Objects are instances of classes.
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black">
+          <pre><code class="language-cpp">
+#include &lt;iostream&gt;
+
+class Car {
+public:
+    std::string brand;
+    std::string model;
+    int year;
+
+    void display() {
+        std::cout &lt;&lt; "Brand: " <br> &lt;&lt; brand &lt;&lt; ", <br> Model: " &lt;&lt; model <br> &lt;&lt; ", Year: " &lt;&lt; year &lt;&lt; std::endl;
+    }
+};
+
+int main() {
+    Car car1;
+    car1.brand = "Toyota";
+    car1.model = "Corolla";
+    car1.year = 2020;
+
+    car1.display();
+
+    return 0;
+}
+          </code></pre>
+        </div>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">File I/O</h2>
+        <p class="mb-4">
+          C++ provides functions to handle file operations like reading,
+          writing, and closing files.
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black">
+          <pre><code class="language-cpp">
+#include &lt;fstream&gt;
+#include &lt;iostream&gt;
+
+int main() {
+    std::ofstream file("test.txt");
+
+    if (file.is_open()) {
+        file &lt;&lt; "Hello, World!";
+        file.close();
+    }
+
+    std::ifstream fileRead <br>("test.txt");
+    std::string line;
+    if (fileRead.is_open()) {
+        while (getline <br>(fileRead, line)) {
+            std::cout &lt;&lt; <br> line &lt;&lt; std::endl;
+        }
+        fileRead.close();
+    }
+
     return 0;
 }
           </code></pre>
