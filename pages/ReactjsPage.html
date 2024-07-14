@@ -241,6 +241,50 @@
         </div>
         <p>Components can be composed together to build complex UIs.</p>
       </section>
+
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">State and Lifecycle</h2>
+        <p class="mb-4">
+          State is a built-in object in React components that allows the
+          component to manage and respond to changes in data over time.
+          Lifecycle methods are special methods in class components that allow
+          you to run code at specific points in the component's life.
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black mb-4">
+          <code>
+            class Clock extends React.Component {<br />
+            &nbsp;&nbsp;constructor(props) {<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;super(props);<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;this.state = {date: new Date()};<br />
+            &nbsp;&nbsp;}<br /><br />
+            &nbsp;&nbsp;componentDidMount() {<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;this.timerID = setInterval(<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;() => this.tick(),<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1000<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;);<br />
+            &nbsp;&nbsp;}<br /><br />
+            &nbsp;&nbsp;componentWillUnmount() {<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;clearInterval(this.timerID);<br />
+            &nbsp;&nbsp;}<br /><br />
+            &nbsp;&nbsp;tick() {<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;this.setState({<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;date: new Date()<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;});<br />
+            &nbsp;&nbsp;}<br /><br />
+            &nbsp;&nbsp;render() {<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;return (<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Hello,
+            world!&lt;/h1&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;It is
+            {this.state.date.<br />toLocaleTimeString()}.&lt;/h2&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;);<br />
+            &nbsp;&nbsp;}<br />
+            }
+          </code>
+        </div>
+      </section>
     </div>
 
     <a href="#" class="fixed bottom-4 right-4">
