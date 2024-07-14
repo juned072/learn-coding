@@ -1,233 +1,661 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <link
-  href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-  rel="stylesheet"
-/>
-    <title>MySQL</title>
-</head>
-<body>
-    <div>
-        <img src="./../images/learning.png" alt="icon" width="40px" />
-        <h1>Learn Hub</h1>
-        <hr />
-        <div>
-          <a href="../index.html"> Home </a> &nbsp; 
-          <a href="HTML.html">Html</a> &nbsp;
-          <a href="css.html">Css</a> &nbsp;
-          <a href="javascriptPage.html">JavaScript</a> &nbsp;
-          <a href="reactjsPage.html">React js</a> &nbsp;
-          <a href="cPage.html">C</a> &nbsp;
-          <a href="CppPage.html">C++</a> &nbsp;
-          <a href="PythonPage.html">Python</a> &nbsp;
-           <a> MySQL</a>&nbsp;
-           <a href="java.html">Java</a> &nbsp;
-          <a href="swift.html">Swift</a> &nbsp; &nbsp; &nbsp; &nbsp;
-          &nbsp; &nbsp;
-          <a href="signup.html"><button>Sign up</button></a>
-          <a href="login_page.html"><button>Login</button></a>
-          
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>MySQL | Learn Hub</title>
+  </head>
+  <body class="bg-gray-900 text-white">
+    <div
+      class="flex items-center justify-between p-4 px-2 md:px-5 text-white bg-black"
+    >
+      <a href="../index.html">
+        <div class="flex items-center space-x-2">
+          <img src="../images/learning.png" alt="icon" width="35px" />
+          <h1 class="text-2xl font-bold">Learn Hub</h1>
         </div>
+      </a>
+      <div class="hidden md:flex md:items-center">
+        <a
+          href="../index.html"
+          class="hover:bg-red-600 p-3 cursor-pointer rounded-md transition duration-100 ease-in-out"
+          >Home</a
+        >
+        <a
+          href="htmlPage.html"
+          class="hover:bg-red-600 p-3 cursor-pointer rounded-md transition duration-100 ease-in-out"
+          >Html</a
+        >
+        <a
+          href="CssPage.html"
+          class="hover:bg-red-600 p-3 cursor-pointer rounded-md transition duration-100 ease-in-out"
+          >Css</a
+        >
+        <a
+          href="JavascriptPage.html"
+          class="hover:bg-red-600 p-3 cursor-pointer rounded-md transition duration-100 ease-in-out"
+          >JavaScript</a
+        >
+        <a
+          href="ReactjsPage.html"
+          class="hover:bg-red-600 p-3 cursor-pointer rounded-md transition duration-100 ease-in-out"
+          >React js</a
+        >
+        <a
+          href="CPage.html"
+          class="hover:bg-red-600 p-3 cursor-pointer rounded-md transition duration-100 ease-in-out"
+          >C</a
+        >
+        <a
+          href="CppPage.html"
+          class="hover:bg-red-600 p-3 cursor-pointer rounded-md transition duration-100 ease-in-out"
+          >C++</a
+        >
+        <a
+          href="PythonPage.html"
+          class="hover:bg-red-600 p-3 cursor-pointer rounded-md transition duration-100 ease-in-out"
+          >Python</a
+        >
+        <a
+          href="JavaPage.html"
+          class="hover:bg-red-600 p-3 cursor-pointer rounded-md transition duration-100 ease-in-out"
+          >Java</a
+        >
+        <a
+          href="SwiftPage.html"
+          class="hover:bg-red-600 p-3 cursor-pointer rounded-md transition duration-100 ease-in-out"
+          >Swift</a
+        >
+        <a
+          href="MysqlPage.html"
+          class="hover:bg-red-600 p-3 cursor-pointer rounded-md transition duration-100 ease-in-out"
+          >MySQL</a
+        >
       </div>
-  
-      <hr />
-
-
-      <div> 
-        <img src="./../images/sql.png" height="50px"/> 
-        <h1> MySQL</h1>
-        <hr>
+      <div class="md:hidden">
+        <img
+          src="../images/bar.png"
+          width="30px"
+          class="cursor-pointer"
+          id="menu-toggle"
+        />
       </div>
-        <p>
-           <u> <h2> Introduction to MySQL</h2></u> <br>
-             MySQL is a very popular <i>open-source</i> relational <b>database</b> management system (RDBMS)<br><br>
-
-             <u><h2>What is MySQL?</h2></u>
-             <ul type="disc">
-              <li> MySQL is a relational database management system</li>
-              <li>MySQL is open-source</li>
-              <li>MySQL is free</li>
-              <li>MySQL is ideal for both small and large applications</li>
-              <li>MySQL was first released in 1995</li>
-              <li>MySQL is developed, distributed, and supported by Oracle Corporation</li>
-             </ul> <br><br>
-
-             <u><h2>Database</h2></u>
-             Database is <u><i>collection of data  </i> </u> a format that can be easily accessed (digital) <br>
-             A software application used to manage our DB is called DBMS (database management system ) <br><br>
-
-             <u><h2> Types of  Database</h2></u>
-             <ol type="number">
-             <li><b> Relational </b></li>
-               Data stored in tables  Ex: MySQL
-              <br>
-               <li><b> Non-Relational</b></li>
-               Data not stored in tables Ex:MongoDB
-              </ol>
-               <br><br>
-
-               <u><h2> Types of datatypes in MySQL</h2></u>
-            <table border="1">
-               <thead>
-                <tr>
-                  <th>Data type </th>
-                  <th> Description</th>
-                </tr>
-               </thead>
-                
-               <tbody>
-                <tr>
-                  <td>CHAR(size)</td>
-                  <td> Holds a fixed length string (can contain letters, numbers, and special characters). The fixed size is specified in
-                    parenthesis. Can store up to 255 characters</td>
-                </tr>
-
-                <tr>
-                  <td>VARCHAR(size)</td>
-                  <td>Holds a variable length string (can contain letters, numbers, and special characters). The maximum size is specified in parenthesis. Can store up to 255 characters. Note: If you put a greater value than 255 it will be converted to a TEXT
-                    type</td>
-                </tr>
-
-                <tr>
-                  <td>TINYTEXT</td>
-                  <td> Holds a string with a maximum length of 255 characters</td>
-                </tr>
-
-                <tr>
-                  <td>TEXT</td>
-                  <td> Holds a string with a maximum length of 255 characters</td>
-                </tr>
-
-                <tr>
-                  <td>BLOB</td>
-                  <td>For BLOBs (Binary Large Objects). Holds up to 65,535 bytes of data </td>
-                </tr>
-
-                <tr>
-                  <td>MEDIUMTEXT</td>
-                  <td>Holds a string with a maximum length of 16,777,215 characters </td>
-                </tr>
-
-                <tr>
-                  <td>MEDIUMBLOB</td>
-                  <td> For BLOBS (Binary Large Objects). Holds up to 16,777,215 bytes of data</td>
-                </tr>
-
-                <tr>
-                  <td>LONGTEXT</td>
-                  <td>Holds a string with a maximum length of 4,294,967,295 characters </td>
-                </tr>
-
-                <tr>
-                  <td>LONGBLOB</td>
-                  <td> For BLOBS (Binary Large Objects). Holds up to 4,294,967,295 bytes of data</td>
-                </tr>
-
-                <tr>
-                  <td>ENUM(x,y,z,etc.) </td>
-                  <td> Let you enter a list of possible values. You can list up to 65535 values in an ENUM list. If a value is inserted that is not in the list, a blank value will be inserted. Note: The values are sorted in the order you enter them. You enter the possible values in this format: ENUM('X','Y', 'Z')</td>
-                </tr>
-
-                <tr>
-                  <td>SET</td>
-                  <td> Similar to ENUM except that SET may contain up to 64 list items and can store more than one choice</td>
-                </tr>
-               </tbody>
-            </table>
-
-            <br><br>
-
-            <u><h2>Types of MySQL Commands</h2></u>
-            <img src="./../images/sqlcommand.png" height="350"/><br><br>
-
-            <u><h2> Uses of commands </h2></u>
-
-              <ol type="number">
-
-             <li> <b> SELECT : </b> </li>
-              The SELECT statement is used to select data from a database.<br><br>
-              <b>SELECT Syntax :</b> <br>
-              <table border="1">
-                <tr>
-            <td> SELECT  column1, column2, ... <br> FROM table_name;</td>
-               </tr>
-            </table><br><br><br>
-
-           <li> <b> WHERE :</b></li>
-            The WHERE clause is used to filter records.<br><br>
-            <b> WHERE Syntax :</b> <br>
-            <table border="1">
-              <tr>
-                <td>
-                  SELECT column1, column2, ...<br>
-                  FROM table_name<br>
-                  WHERE condition;<br>
-                </td>
-              </tr>
-            </table><br><br><br>
-
-            <li><b> INSERT INTO :</b></li>
-            The INSERT INTO statement is used to insert new records in a table.<br><br>
-            <b> INSERT INTO Syntax :</b> <br>
-            <table border="1">
-              <tr>
-                <td>
-                  INSERT INTO table_name (column1, column2, column3, ...)<br>
-                  VALUES (value1, value2, value3, ...);<br>
-                </td>
-              </tr>
-            </table><br><br><br>
-
-            <li><b> UPDATE :</b></li>
-            The UPDATE statement is used to modify the existing records in a table.<br><br>
-            <b> UPDATE Syntax :</b> <br>
-            <table border="1">
-              <tr>
-                <td>
-                  UPDATE table_name<br>
-                  SET column1 = value1, column2 = value2, ...<br>
-                  WHERE condition;<br>
-                </td>
-              </tr>
-            </table><br><br><br>
-
-            <li> <b> DELETE :</b></li>
-            The DELETE statement is used to delete existing records in a table.<br><br>
-            <b> DELETE Syntax :</b> <br>
-            <table border="1">
-              <tr>
-                <td>
-                  DELETE FROM table_name WHERE condition;<br>
-                </td>
-              </tr>
-            </table><br><br><br>
-          </ol>
-             
-           
-          <u><h3> know more about MySQL </h3></u>
-            <br><br>
-           <iframe width="560" height="315" src="https://www.youtube.com/embed/hlGoQC332VM?si=8MMFF2ZsA026xpuw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <hr />
-        <a href="MySQL.html">
-          <button>Move to top ⬆</button>
-        </a>
-        <hr />
-        <footer>
-          <div>
-            <p>Learn Hub | learn coding with learn hub</p>
-            <div>
-              <a href="https://www.facebook.com" target="_blank">Facebook</a> &nbsp;
-              | &nbsp;
-              <a href="https://www.twitter.com" target="_blank">Twitter</a> &nbsp; |
-              &nbsp;
-              <a href="https://www.instagram.com" target="_blank">Instagram</a>
-              &nbsp; | &nbsp;
-              <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
-            </div>
+      <div
+        id="menu"
+        class="hidden md:hidden absolute top-16 left-0 w-full bg-black text-white z-10"
+      >
+        <div class="flex flex-col p-5">
+          <a
+            href="../index.html"
+            class="hover:bg-red-600 p-3 w-full cursor-pointer rounded-md transition duration-100 ease-in-out"
+            >Home</a
+          >
+          <a
+            href="htmlPage.html"
+            class="hover:bg-red-600 p-3 w-full cursor-pointer rounded-md transition duration-100 ease-in-out"
+            >Html</a
+          >
+          <a
+            href="CssPage.html"
+            class="hover:bg-red-600 p-3 w-full cursor-pointer rounded-md transition duration-100 ease-in-out"
+            >Css</a
+          >
+          <a
+            href="JavascriptPage.html"
+            class="hover:bg-red-600 p-3 w-full cursor-pointer rounded-md transition duration-100 ease-in-out"
+            >JavaScript</a
+          >
+          <a
+            href="ReactjsPage.html"
+            class="hover:bg-red-600 p-3 w-full cursor-pointer rounded-md transition duration-100 ease-in-out"
+            >React js</a
+          >
+          <a
+            href="CPage.html"
+            class="hover:bg-red-600 p-3 w-full cursor-pointer rounded-md transition duration-100 ease-in-out"
+            >C</a
+          >
+          <a
+            href="CppPage.html"
+            class="hover:bg-red-600 p-3 w-full cursor-pointer rounded-md transition duration-100 ease-in-out"
+            >C++</a
+          >
+          <a
+            href="PythonPage.html"
+            class="hover:bg-red-600 p-3 w-full cursor-pointer rounded-md transition duration-100 ease-in-out"
+            >Python</a
+          >
+          <a
+            href="JavaPage.html"
+            class="hover:bg-red-600 p-3 w-full cursor-pointer rounded-md transition duration-100 ease-in-out"
+            >Java</a
+          >
+          <a
+            href="SwiftPage.html"
+            class="hover:bg-red-600 p-3 w-full cursor-pointer rounded-md transition duration-100 ease-in-out"
+            >Swift</a
+          >
+          <a
+            href="MysqlPage.html"
+            class="hover:bg-red-600 p-3 w-full cursor-pointer rounded-md transition duration-100 ease-in-out"
+            >MySQL</a
+          >
+          <div class="mt-5">
+            <a
+              href="SignupPage.html"
+              class="p-3 bg-white text-black rounded-md hover:bg-gray-100 text-sm"
+              ><button>Sign up</button></a
+            >
+            <a
+              href="LoginPage.html"
+              class="p-3 bg-red-600 text-white rounded-md hover:bg-red-700 transition duration-100 ease-in-out text-sm"
+            >
+              <button>Login</button>
+            </a>
           </div>
-        </footer>
+        </div>
+      </div>
+      <div class="hidden md:flex items-center space-x-2">
+        <a
+          href="SignupPage.html"
+          class="p-3 bg-white text-black rounded-md hover:bg-gray-100 text-sm"
+          ><button>Sign up</button></a
+        >
+        <a
+          href="LoginPage.html"
+          class="p-3 bg-red-600 text-white rounded-md hover:bg-red-700 transition duration-100 ease-in-out text-sm"
+        >
+          <button>Login</button>
+        </a>
+      </div>
+    </div>
+
+    <div class="container mx-auto p-5">
+      <a href="../index.html"
+        ><span
+          class="border-b pb-1 cursor-pointer flex items-center w-20 rounded-md p-1"
+          ><img src="../images/home.png" width="18px" />
+          <p class="ml-2 text-gray-100">Home</p></span
+        ></a
+      >
+      <section class="mb-10 mt-5">
+        <h2 class="text-3xl font-bold mb-4">Introduction to MySQL</h2>
+        <p class="mb-4">
+          MySQL is an open-source relational database management system. It is
+          widely used for managing and organizing data in various applications,
+          including web applications.
         </p>
-</body>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">Installation</h2>
+        <p class="mb-4">
+          To start working with MySQL, you need to install it on your system.
+          Follow the instructions for your operating system:
+        </p>
+        <ul class="list-disc pl-5 mb-4">
+          <li>
+            For Windows: Download the MySQL installer from the
+            <a
+              href="https://dev.mysql.com/downloads/installer/"
+              class="text-blue-400"
+              target="_blank"
+              >official website</a
+            >
+            and follow the installation steps.
+          </li>
+          <li>
+            For macOS: Use Homebrew to install MySQL with the command
+            <code class="bg-gray-800 p-1 rounded">brew install mysql</code>.
+          </li>
+          <li>
+            For Linux: Use your package manager to install MySQL. For example,
+            on Ubuntu, use the command
+            <code class="bg-gray-800 p-1 rounded"
+              >sudo apt-get install mysql-server</code
+            >.
+          </li>
+        </ul>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">Connecting to MySQL</h2>
+        <p class="mb-4">
+          After installation, you can connect to the MySQL server using the
+          MySQL client. Open your terminal or command prompt and run:
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black">
+          <pre><code class="language-sql">
+mysql -u root -p
+            </code></pre>
+        </div>
+        <p class="mb-4">
+          You will be prompted to enter the password for the root user. Once
+          connected, you can start executing MySQL commands.
+        </p>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">Creating a Database</h2>
+        <p class="mb-4">
+          To create a new database, use the
+          <code>CREATE DATABASE</code> statement:
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black">
+          <pre><code class="language-sql">
+CREATE DATABASE mydatabase;
+            </code></pre>
+        </div>
+        <p class="mb-4">
+          You can check the list of databases using the
+          <code>SHOW DATABASES</code> statement:
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black">
+          <pre><code class="language-sql">
+SHOW DATABASES;
+            </code></pre>
+        </div>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">Creating a Table</h2>
+        <p class="mb-4">
+          To create a table in your database, use the
+          <code>CREATE TABLE</code> statement. First, switch to your database:
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black">
+          <pre><code class="language-sql">
+USE mydatabase;
+            </code></pre>
+        </div>
+        <p class="mb-4">Now, create a table:</p>
+        <div class="bg-white p-4 rounded shadow text-black">
+          <pre><code class="language-sql">
+CREATE TABLE users (
+id INT AUTO_INCREMENT PRIMARY KEY,
+username VARCHAR(50) NOT NULL,
+email VARCHAR(100) NOT NULL,
+created_at TIMESTAMP 
+ DEFAULT CURRENT_TIMESTAMP
+);
+            </code></pre>
+        </div>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">Inserting Data</h2>
+        <p class="mb-4">
+          To insert data into your table, use the
+          <code>INSERT INTO</code> statement:
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black">
+          <pre><code class="language-sql">
+INSERT INTO users (username, email)
+ VALUES ('john_doe', 
+'john@example.com');
+            </code></pre>
+        </div>
+        <p class="mb-4">You can insert multiple rows at once:</p>
+        <div class="bg-white p-4 rounded shadow text-black">
+          <pre><code class="language-sql">
+INSERT INTO users
+ (username, email) VALUES 
+('jane_doe', 'jane@example.com'),
+('alice_smith', 
+'alice@example.com');
+            </code></pre>
+        </div>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">Querying Data</h2>
+        <p class="mb-4">
+          To retrieve data from your table, use the
+          <code>SELECT</code> statement:
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black">
+          <pre><code class="language-sql">
+SELECT * FROM users;
+            </code></pre>
+        </div>
+        <p class="mb-4">You can specify columns to retrieve:</p>
+        <div class="bg-white p-4 rounded shadow text-black">
+          <pre><code class="language-sql">
+SELECT username, email FROM users;
+            </code></pre>
+        </div>
+        <p class="mb-4">To filter data, use the <code>WHERE</code> clause:</p>
+        <div class="bg-white p-4 rounded shadow text-black">
+          <pre><code class="language-sql">
+SELECT * FROM users WHERE
+username = 'john_doe';
+            </code></pre>
+        </div>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">Updating Data</h2>
+        <p class="mb-4">
+          To update existing data, use the <code>UPDATE</code> statement:
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black">
+          <pre><code class="language-sql">
+UPDATE users SET email =
+ 'new_email@example.com'
+  WHERE username = 'john_doe';
+            </code></pre>
+        </div>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">Deleting Data</h2>
+        <p class="mb-4">
+          To delete data from your table, use the
+          <code>DELETE FROM</code> statement:
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black">
+          <pre><code class="language-sql">
+DELETE FROM users<br> WHERE username = 'john_doe';
+            </code></pre>
+        </div>
+      </section>
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">Joins</h2>
+        <p class="mb-4">
+          Joins are used to combine rows from two or more tables based on a
+          related column between them. Here are some common types of joins:
+        </p>
+
+        <h3 class="text-2xl mb-2">Inner Join</h3>
+        <p class="mb-4">
+          Returns records that have matching values in both tables.
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black">
+          <pre><code class="language-sql">
+SELECT users.username,
+ orders.order_id
+FROM users
+INNER JOIN orders ON
+users.id = orders.user_id;
+            </code></pre>
+        </div>
+
+        <h3 class="text-2xl mb-2">Left Join</h3>
+        <p class="mb-4">
+          Returns all records from the left table, and the matched records from
+          the right table.
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black">
+          <pre><code class="language-sql">
+SELECT users.username,
+ orders.order_id
+FROM users
+LEFT JOIN orders ON
+ users.id = orders.user_id;
+            </code></pre>
+        </div>
+
+        <h3 class="text-2xl mb-2">Right Join</h3>
+        <p class="mb-4">
+          Returns all records from the right table, and the matched records from
+          the left table.
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black">
+          <pre><code class="language-sql">
+SELECT users.username,
+ orders.order_id
+FROM users
+RIGHT JOIN orders
+ ON users.id = orders.user_id;
+            </code></pre>
+        </div>
+      </section>
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">Triggers</h2>
+        <p class="mb-4">
+          Triggers are special stored procedures that are automatically executed
+          when an event occurs in a table. To create a trigger, use the
+          <code>CREATE TRIGGER</code> statement:
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black">
+          <pre><code class="language-sql">
+DELIMITER //
+CREATE TRIGGER before_insert_user
+BEFORE INSERT ON users
+FOR EACH ROW
+BEGIN
+SET NEW.created_at = NOW();
+END //
+DELIMITER ;
+            </code></pre>
+        </div>
+        <p class="mb-4">
+          This trigger automatically sets the <code>created_at</code> field to
+          the current timestamp before inserting a new row into the
+          <code>users</code> table.
+        </p>
+        <p class="mb-4">
+          To drop a trigger, use the <code>DROP TRIGGER</code> statement:
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black">
+          <pre><code class="language-sql">
+DROP TRIGGER before_insert_user;
+            </code></pre>
+        </div>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">Transactions</h2>
+        <p class="mb-4">
+          Transactions are used to ensure data integrity by grouping multiple
+          SQL statements into a single unit of work. Transactions follow the
+          ACID properties: Atomicity, Consistency, Isolation, and Durability.
+        </p>
+        <p class="mb-4">
+          To start a transaction, use the
+          <code>START TRANSACTION</code> statement:
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black">
+          <pre><code class="language-sql">
+START TRANSACTION;
+-- SQL statements here
+COMMIT;
+            </code></pre>
+        </div>
+        <p class="mb-4">
+          To roll back a transaction (undo changes), use the
+          <code>ROLLBACK</code> statement:
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black">
+          <pre><code class="language-sql">
+START TRANSACTION;
+-- SQL statements here
+ROLLBACK;
+            </code></pre>
+        </div>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">User Management</h2>
+        <p class="mb-4">
+          MySQL allows you to create and manage users with different privileges.
+          To create a new user, use the <code>CREATE USER</code> statement:
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black">
+          <pre><code class="language-sql">
+CREATE USER 'newuser'@'localhost' 
+IDENTIFIED BY 'password';
+            </code></pre>
+        </div>
+        <p class="mb-4">
+          To grant privileges to a user, use the <code>GRANT</code> statement:
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black">
+          <pre><code class="language-sql">
+GRANT ALL PRIVILEGES
+ ON mydatabase.* 
+TO 'newuser'@'localhost';
+            </code></pre>
+        </div>
+        <p class="mb-4">
+          To revoke privileges, use the <code>REVOKE</code> statement:
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black">
+          <pre><code class="language-sql">
+REVOKE ALL PRIVILEGES
+ ON mydatabase.* 
+ FROM 'newuser'@'localhost';
+            </code></pre>
+        </div>
+        <p class="mb-4">
+          To delete a user, use the <code>DROP USER</code> statement:
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black">
+          <pre><code class="language-sql">
+DROP USER 'newuser'@'localhost';
+            </code></pre>
+        </div>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">Backups and Restoration</h2>
+        <p class="mb-4">
+          Backing up your database is crucial for data recovery. To create a
+          backup of your database, use the <code>mysqldump</code> command:
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black">
+          <pre><code class="language-shell">
+mysqldump -u root -p 
+mydatabase > mydatabase_backup.sql
+            </code></pre>
+        </div>
+        <p class="mb-4">
+          To restore a database from a backup, use the
+          <code>mysql</code> command:
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black">
+          <pre><code class="language-shell">
+mysql -u root -p mydatabase
+ < mydatabase_backup.sql
+            </code></pre>
+        </div>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">Optimization and Performance</h2>
+        <p class="mb-4">
+          Optimizing your MySQL database is important for ensuring efficient
+          data retrieval and management. Here are a few tips:
+        </p>
+        <ul class="list-disc pl-5 mb-4">
+          <li>Use indexes to speed up query performance.</li>
+          <li>Optimize queries to avoid unnecessary complexity.</li>
+          <li>
+            Use the <code>EXPLAIN</code> statement to analyze query performance.
+          </li>
+          <li>
+            Regularly check and optimize your tables using
+            <code>ANALYZE TABLE</code> and <code>OPTIMIZE TABLE</code>.
+          </li>
+        </ul>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">Security Best Practices</h2>
+        <p class="mb-4">
+          Maintaining the security of your MySQL database is essential. Follow
+          these best practices:
+        </p>
+        <ul class="list-disc pl-5 mb-4">
+          <li>Use strong passwords for MySQL users.</li>
+          <li>Limit user privileges to only what is necessary.</li>
+          <li>Regularly update MySQL to the latest version.</li>
+          <li>Enable SSL for encrypted connections.</li>
+          <li>Regularly back up your data.</li>
+        </ul>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">Resources</h2>
+        <p class="mb-4">
+          Here are some useful resources for learning more about MySQL:
+        </p>
+        <ul class="list-disc pl-5 mb-4">
+          <li>
+            <a
+              href="https://dev.mysql.com/doc/"
+              class="text-blue-400"
+              target="_blank"
+              >MySQL Documentation</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.mysqltutorial.org/"
+              class="text-blue-400"
+              target="_blank"
+              >MySQL Tutorial</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://stackoverflow.com/questions/tagged/mysql"
+              class="text-blue-400"
+              target="_blank"
+              >Stack Overflow MySQL Questions</a
+            >
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <a href="#" class="fixed bottom-4 right-4">
+      <div
+        class="px-4 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-700 transition duration-300"
+      >
+        <img src="../images/move.png" width="20px" title="Go to Top" />
+      </div>
+    </a>
+
+    <footer class="bg-black text-white text-center py-4">
+      <p>Learn Hub | learn coding with learn hub</p>
+      <div class="mt-2">
+        <a
+          href="https://www.facebook.com"
+          target="_blank"
+          class="text-blue-500 hover:text-blue-700 mx-2"
+          >Facebook</a
+        >
+        <a
+          href="https://www.twitter.com"
+          target="_blank"
+          class="text-blue-500 hover:text-blue-700 mx-2"
+          >Twitter</a
+        >
+        <a
+          href="https://www.instagram.com"
+          target="_blank"
+          class="text-blue-500 hover:text-blue-700 mx-2"
+          >Instagram</a
+        >
+        <a
+          href="https://www.linkedin.com"
+          target="_blank"
+          class="text-blue-500 hover:text-blue-700 mx-2"
+          >LinkedIn</a
+        >
+      </div>
+    </footer>
+  </body>
+  <script>
+    document
+      .getElementById("menu-toggle")
+      .addEventListener("click", function () {
+        document.getElementById("menu").classList.toggle("hidden");
+      });
+  </script>
 </html>
