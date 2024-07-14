@@ -1,363 +1,291 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
-    <title>React.js | Learn Coding with Learn Hub</title>
+    <title>React.js | Learn Hub</title>
   </head>
-  <body>
-    <div>
-      <img src="../images/learning.png" alt="icon" width="40px" />
-      <h1>Learn Hub</h1>
-      <hr />
-      <div>
-        <a href="../index.html">Home</a> &nbsp;
-        <a href="HTML.html">HTML</a> &nbsp; <a href="css.html">Css</a> &nbsp;
-        <a href="javascriptPage.html">JavaScript</a> &nbsp;
-        <a>React.js</a> &nbsp; <a href="CPage.html">C</a> &nbsp;
-        <a href="CppPage.html">C++</a> &nbsp;
-        <a href="PythonPage.html">Python</a> &nbsp;
-        <a href="MySQL.html">MySQL</a> &nbsp;
-        <a href="java.html">Java</a> &nbsp;
-        <a href="swift.html">Swift</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        <a href="signup.html"><button>Sign up</button></a>
-        <a href="login_page.html"> <button>Login</button> </a>
-      </div>
-    </div>
-    <hr />
-    <div>
-      <div>
-        <img src="../images/reactjsIcon.png" alt="React.js-icon" width="50px" />
-        <h1>React Js</h1>
-      </div>
-      <hr />
-      <div>
-        <h1>React Introduction</h1>
-        <hr />
-        <h3>What is React.js?</h3>
-        <p>
-          React, sometimes referred to as a
-          <b>frontend JavaScript framework</b>, is a JavaScript library created
-          by <b>Facebook</b>. React is a tool for building <i>UI components</i>.
-        </p>
-        <br />
-        <h3>How does React Work?</h3>
-        <b>👉 React creates a VIRTUAL DOM in memory.</b>
-        <ul>
-          <li>
-            Instead of manipulating the browser's <b>DOM</b> directly, React
-            creates a virtual DOM in memory, where it does all the necessary
-            manipulating before making the changes in the browser DOM.
-          </li>
-        </ul>
-        <b>👉 React only changes what needs to be changed!</b>
-        <ul>
-          <li>
-            React finds out what changes have been made, and changes only what
-            needs to be changed.
-          </li>
-        </ul>
-        <br />
-        <h3>React.js History</h3>
-        <ul>
-          <li>
-            Current version of <b>React.js</b> is <b>V18.0.0 (April 2022)</b>.
-          </li>
-          <li>
-            Initial Release to the <b>Public (V0.3.0)</b> was in
-            <b>July 2013</b>.
-          </li>
-          <li>
-            React.js was first used in <b>2011</b> for Facebook's Newsfeed
-            feature.
-          </li>
-          <li>Facebook Software Engineer, <b>Jordan Walke</b>, created it.</li>
-          <li>Current version of create-react-app is v5.0.1 (April 2022).</li>
-          <li>
-            create-react-app includes built tools such as
-            <b>webpack ,Babel ,</b> and <b>ESLint</b>.
-          </li>
-        </ul>
-      </div>
-      <br />
-      <hr />
-      <div>
-        <h1>React Getting Started</h1>
-        <hr />
-        <br />
-        <strong
-          >To use React in production, you need npm which is included with
-          Node.js.</strong
-        >
-        <ol>
-          <li>
-            To get an overview of what React is, you can write React code
-            directly in HTML.
-          </li>
-          <li>
-            But in order to use React in production, you <b>need npm</b> and
-            <b>Node.js installed.</b>
-          </li>
-        </ol>
-        <br />
-        <h2>Setting up a React Environment</h2>
-        <p>
-          If you have <b>npx</b> and <b>Node.js</b> installed, you can create a
-          React application by using <b>create-react-app</b>.
-        </p>
-        <ol>
-          <li>
-            If you've previously installed <u>create-react-app</u> globally, it
-            is recommended that you uninstall the package to ensure npx always
-            uses the latest version of <u>create-react-app.</u>
-          </li>
-          <li>
-            To uninstall, run this command:
-            <b><u>npm uninstall -g create-react-app.</u></b>
-          </li>
-        </ol>
-        <p>
-          Run this command to create a React application named
-          <b>my-react-app</b>:
-        </p>
-        <b>| <u>npx create-react-app my-react-app </u></b>
-        <p>
-          The <u>create-react-app</u> will set up everything you need to
-          <b>run a React application</b>.
-        </p>
-        <br />
-        <h2>Run the React Application</h2>
-        <ul>
-          <li>Now you are ready to run your first real React application!</li>
-          <li>Run this command to move to the my-react-app directory:</li>
-        </ul>
-        <b>| <u>cd my-react-app </u></b>
-        <p>Run this command to run the React application my-react-app:</p>
-        <b>| <u>npm start </u></b>
-        <p>
-          A new browser window will pop up with your newly created React App! If
-          not, open your browser and type localhost:3000 in the address bar.
-        </p>
-      </div>
-      <br />
-      <hr />
-      <div>
-        <h1>React Features</h1>
-        <hr />
-        <ul>
-          <li>
-            <b>JSX:</b> JSX is a syntax extension for JavaScript, which allows
-            you to write HTML directly within React.
-          </li>
-          <li>
-            <b>Components:</b> Components are the building blocks of any React
-            application, and a typical React app will contain many of these.
-          </li>
-          <li>
-            <b>Unidirectional Data Flow:</b> React implements one-way data flow,
-            making it easier to reason about your app.
-          </li>
-          <li>
-            <b>Virtual DOM:</b> The virtual DOM makes updates faster by updating
-            only the parts of the DOM that need to change.
-          </li>
-          <li>
-            <b>Performance:</b> React is known for its high performance due to
-            its virtual DOM implementation.
-          </li>
-          <li>
-            <b>Extensions:</b> React goes beyond just being a UI library. It has
-            a rich ecosystem of extensions for routing, state management, and
-            more.
-          </li>
-        </ul>
-      </div>
-      <br />
-      <hr />
-      <div>
-        <h1>Why Use React?</h1>
-        <hr />
-        <p>
-          React is used for building large-scale applications with dynamic data
-          changes. Here are some reasons why React is popular:
-        </p>
-        <ul>
-          <li>
-            React allows developers to build web applications that can update
-            and render efficiently in response to data changes.
-          </li>
-          <li>It makes it easy to create interactive UIs with components.</li>
-          <li>
-            It helps in building complex applications with ease, due to its
-            component-based architecture.
-          </li>
-          <li>
-            React’s declarative nature makes it easier to debug and understand
-            the code.
-          </li>
-        </ul>
-      </div>
-      <br />
-      <hr />
-      <div>
-        <h1>React Ecosystem</h1>
-        <hr />
-        <ul>
-          <li>
-            <b>Redux:</b> A predictable state container for JavaScript apps.
-          </li>
-          <li><b>React Router:</b> A standard library for routing in React.</li>
-          <li>
-            <b>Material-UI:</b> React components for faster and easier web
-            development.
-          </li>
-          <li>
-            <b>Styled Components:</b> Utilizes tagged template literals to style
-            your apps.
-          </li>
-          <li>
-            <b>Next.js:</b> A React framework for server-rendered applications.
-          </li>
-        </ul>
-      </div>
-    </div>
-    <br />
-    <hr />
-    <div>
-      <h1>React Component Types</h1>
-      <hr />
-      <h3>Functional Components</h3>
-      <p>
-        These are simple JavaScript functions that accept props as an argument
-        and return React elements.
-      </p>
-      <h3>Class Components</h3>
-      <p>
-        These are ES6 classes that extend from React.Component and have a render
-        method which returns React elements.
-      </p>
-      <br />
-      <h3>Stateful vs Stateless Components</h3>
-      <ul>
-        <li>
-          <b>Stateful Components:</b> These components can hold and manage their
-          own state.
-        </li>
-        <li>
-          <b>Stateless Components:</b> These components do not hold or manage
-          their own state and are also known as presentational components.
-        </li>
-      </ul>
-    </div>
-    <br />
-    <hr />
-    <div>
-      <h1>React Lifecycle Methods</h1>
-      <hr />
-      <p>
-        React lifecycle methods can be used inside class components (before
-        React 16.8). They allow developers to hook into the different phases
-        (mounting, updating, and unmounting) of a component.
-      </p>
-      <ul>
-        <li>
-          <b>componentDidMount:</b> Invoked immediately after a component is
-          mounted.
-        </li>
-        <li>
-          <b>shouldComponentUpdate:</b> Called to determine if a component
-          should re-render due to changes in props or state.
-        </li>
-        <li>
-          <b>componentDidUpdate:</b> Called immediately after updating occurs.
-        </li>
-        <li>
-          <b>componentWillUnmount:</b> Called right before a component is
-          unmounted and destroyed.
-        </li>
-      </ul>
-      <img
-        src="../images/React-lifecyclemethods.png"
-        alt="React-Lifecycle-methods"
-        width="600px"
-      />
-      <p>
-        <i><u>React lifecycle methods</u></i>
-      </p>
-    </div>
-    <br />
-    <hr />
-    <div>
-      <h1>React vs Other Frameworks</h1>
-      <hr />
-      <h3>React vs Angular</h3>
-      <p>
-        Angular is a full-fledged MVC framework, while React is a library that
-        deals with the view component of MVC. Angular uses two-way data binding,
-        whereas React promotes one-way data binding. Angular has a steep
-        learning curve due to its comprehensive nature, whereas React is easier
-        to learn and integrate into projects.
-      </p>
-      <h3>React vs Vue</h3>
-      <p>
-        Vue is similar to React in that it's also a view library, but it is more
-        opinionated with a lot of features built-in, making it a more
-        comprehensive solution out of the box. Vue uses a template-based syntax,
-        whereas React uses JSX, which blends HTML and JavaScript.
-      </p>
-    </div>
-    <br />
-    <hr />
-    <div>
-      <h1>Advanced React Concepts</h1>
-      <hr />
-      <h3>Higher-Order Components (HOC)</h3>
-      <p>
-        A Higher-Order Component is a function that takes a component and
-        returns a new component. HOCs are used to add additional functionality
-        to existing components.
-      </p>
-      <h3>Render Props</h3>
-      <p>
-        Render props is a technique for sharing code between React components
-        using a prop whose value is a function.
-      </p>
-      <h3>Context API</h3>
-      <p>
-        The Context API allows you to share state across the entire app (or part
-        of it) lightly and with ease. It is a good alternative to prop drilling.
-      </p>
-    </div>
-    <br />
-
-    <a
-      href="https://spaceship.roadtocode.org/docs/category/reactjs "
-      target="_blank"
-      ><img src="../images/mortarboard.png" alt="icon" width="25px" />
-      <b>Learn more concepts</b>
-      <img src="../images/external-link.png" alt="icon" width="12px"
-    /></a>
-    <hr />
-    <a href="./ReactjsPage.html">
-      <button>Move to top ⬆</button>
-    </a>
-    <br />
-    <hr />
-    <footer>
-      <div>
-        <p>Learn Hub | Learn Coding with Learn Hub</p>
-        <div>
-          <a href="https://www.facebook.com" target="_blank">Facebook</a> &nbsp;
-          | &nbsp;
-          <a href="https://www.twitter.com" target="_blank">Twitter</a> &nbsp; |
-          &nbsp;
-          <a href="https://www.instagram.com" target="_blank">Instagram</a>
-          &nbsp; | &nbsp;
-          <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+  <body class="bg-gray-900 text-white">
+    <div
+      class="flex items-center justify-between p-4 px-2 md:px-5 text-white bg-black"
+    >
+      <a href="../index.html">
+        <div class="flex items-center space-x-2">
+          <img src="../images/learning.png" alt="icon" width="35px" />
+          <h1 class="text-2xl font-bold">Learn Hub</h1>
         </div>
+      </a>
+      <div class="hidden md:flex md:items-center">
+        <a
+          href="../index.html"
+          class="hover:bg-red-600 p-3 cursor-pointer rounded-md transition duration-100 ease-in-out"
+          >Home</a
+        >
+        <a
+          href="htmlPage.html"
+          class="hover:bg-red-600 p-3 cursor-pointer rounded-md transition duration-100 ease-in-out"
+          >Html</a
+        >
+        <a
+          href="CssPage.html"
+          class="hover:bg-red-600 p-3 cursor-pointer rounded-md transition duration-100 ease-in-out"
+          >Css</a
+        >
+        <a
+          href="JavascriptPage.html"
+          class="hover:bg-red-600 p-3 cursor-pointer rounded-md transition duration-100 ease-in-out"
+          >JavaScript</a
+        >
+        <a
+          href="ReactjsPage.html"
+          class="hover:bg-red-600 p-3 cursor-pointer rounded-md transition duration-100 ease-in-out"
+          >React js</a
+        >
+        <a
+          href="CPage.html"
+          class="hover:bg-red-600 p-3 cursor-pointer rounded-md transition duration-100 ease-in-out"
+          >C</a
+        >
+        <a
+          href="CppPage.html"
+          class="hover:bg-red-600 p-3 cursor-pointer rounded-md transition duration-100 ease-in-out"
+          >C++</a
+        >
+        <a
+          href="PythonPage.html"
+          class="hover:bg-red-600 p-3 cursor-pointer rounded-md transition duration-100 ease-in-out"
+          >Python</a
+        >
+        <a
+          href="MysqlPage.html"
+          class="hover:bg-red-600 p-3 cursor-pointer rounded-md transition duration-100 ease-in-out"
+          >MySQL</a
+        >
+        <a
+          href="JavaPage.html"
+          class="hover:bg-red-600 p-3 cursor-pointer rounded-md transition duration-100 ease-in-out"
+          >Java</a
+        >
+        <a
+          href="SwiftPage.html"
+          class="hover:bg-red-600 p-3 cursor-pointer rounded-md transition duration-100 ease-in-out"
+          >Swift</a
+        >
+      </div>
+      <div class="md:hidden">
+        <img
+          src="../images/bar.png"
+          width="30px"
+          class="cursor-pointer"
+          id="menu-toggle"
+        />
+      </div>
+      <div
+        id="menu"
+        class="hidden md:hidden absolute top-16 left-0 w-full bg-black text-white z-10"
+      >
+        <div class="flex flex-col p-5">
+          <a
+            href="../index.html"
+            class="hover:bg-red-600 p-3 w-full cursor-pointer rounded-md transition duration-100 ease-in-out"
+            >Home</a
+          >
+          <a
+            href="htmlPage.html"
+            class="hover:bg-red-600 p-3 w-full cursor-pointer rounded-md transition duration-100 ease-in-out"
+            >Html</a
+          >
+          <a
+            href="CssPage.html"
+            class="hover:bg-red-600 p-3 w-full cursor-pointer rounded-md transition duration-100 ease-in-out"
+            >Css</a
+          >
+          <a
+            href="JavascriptPage.html"
+            class="hover:bg-red-600 p-3 w-full cursor-pointer rounded-md transition duration-100 ease-in-out"
+            >JavaScript</a
+          >
+          <a
+            href="ReactjsPage.html"
+            class="hover:bg-red-600 p-3 w-full cursor-pointer rounded-md transition duration-100 ease-in-out"
+            >React js</a
+          >
+          <a
+            href="CPage.html"
+            class="hover:bg-red-600 p-3 w-full cursor-pointer rounded-md transition duration-100 ease-in-out"
+            >C</a
+          >
+          <a
+            href="CppPage.html"
+            class="hover:bg-red-600 p-3 w-full cursor-pointer rounded-md transition duration-100 ease-in-out"
+            >C++</a
+          >
+          <a
+            href="PythonPage.html"
+            class="hover:bg-red-600 p-3 w-full cursor-pointer rounded-md transition duration-100 ease-in-out"
+            >Python</a
+          >
+          <a
+            href="MysqlPage.html"
+            class="hover:bg-red-600 p-3 w-full cursor-pointer rounded-md transition duration-100 ease-in-out"
+            >MySQL</a
+          >
+          <a
+            href="JavaPage.html"
+            class="hover:bg-red-600 p-3 w-full cursor-pointer rounded-md transition duration-100 ease-in-out"
+            >Java</a
+          >
+          <a
+            href="SwiftPage.html"
+            class="hover:bg-red-600 p-3 w-full cursor-pointer rounded-md transition duration-100 ease-in-out"
+            >Swift</a
+          >
+          <div class="mt-5">
+            <a
+              href="SignupPage.html"
+              class="p-3 bg-white text-black rounded-md hover:bg-gray-100 text-sm"
+              ><button>Sign up</button></a
+            >
+            <a
+              href="LoginPage.html"
+              class="p-3 bg-red-600 text-white rounded-md hover:bg-red-700 transition duration-100 ease-in-out text-sm"
+            >
+              <button>Login</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="hidden md:flex items-center space-x-2">
+        <a
+          href="SignupPage.html"
+          class="p-3 bg-white text-black rounded-md hover:bg-gray-100 text-sm"
+          ><button>Sign up</button></a
+        >
+        <a
+          href="LoginPage.html"
+          class="p-3 bg-red-600 text-white rounded-md hover:bg-red-700 transition duration-100 ease-in-out text-sm"
+        >
+          <button>Login</button>
+        </a>
+      </div>
+    </div>
+    <div class="container mx-auto p-5">
+      <a href="../index.html"
+        ><span
+          class="border-b pb-1 cursor-pointer flex items-center w-20 rounded-md p-1"
+          ><img src="../images/home.png" width="18px" />
+          <p class="ml-2 text-gray-100">Home</p></span
+        ></a
+      >
+      <section class="mb-10 mt-5">
+        <h2 class="text-3xl font-bold mb-4">Introduction to React.js</h2>
+        <p class="mb-4">
+          React.js is a JavaScript library for building user interfaces,
+          maintained by Facebook. It allows developers to create large web
+          applications that can update and render efficiently in response to
+          data changes. React is component-based, meaning the UI is built from
+          encapsulated components that manage their own state.
+        </p>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">Getting Started with React.js</h2>
+        <p class="mb-4">
+          To get started with React.js, you need to have Node.js and npm (Node
+          Package Manager) installed on your machine. Once you have those, you
+          can create a new React application using the Create React App tool.
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black mb-4">
+          <code>
+            npx create-react-app my-app<br />
+            cd my-app<br />
+            npm start
+          </code>
+        </div>
+        <p>
+          This will create a new React application in the
+          <code>my-app</code> directory and start the development server.
+        </p>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">JSX</h2>
+        <p class="mb-4">
+          JSX is a syntax extension for JavaScript that looks similar to XML or
+          HTML. It is used with React to describe what the UI should look like.
+          JSX makes it easier to write and add HTML in React.
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black">
+          <code> const element = &lt;h1&gt;Hello, world!&lt;/h1&gt;; </code>
+        </div>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">Components</h2>
+        <p class="mb-4">
+          Components are the building blocks of a React application. A component
+          can be a class or a function, and it accepts inputs (called "props")
+          and returns a React element that describes how a section of the UI
+          should appear.
+        </p>
+        <div class="bg-white p-4 rounded shadow text-black mb-4">
+          <code>
+            function Welcome(props) {<br />
+            &nbsp;&nbsp;return &lt;h1&gt;Hello, {props.name}&lt;/h1&gt;;<br />
+            }
+          </code>
+        </div>
+        <p>Components can be composed together to build complex UIs.</p>
+      </section>
+    </div>
+
+    <a href="#" class="fixed bottom-4 right-4">
+      <div
+        class="px-4 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-700 transition duration-300"
+      >
+        <img src="../images/move.png" width="20px" title="Go to Top" />
+      </div>
+    </a>
+
+    <footer class="bg-black text-white text-center py-4">
+      <p>Learn Hub | learn coding with learn hub</p>
+      <div class="mt-2">
+        <a
+          href="https://www.facebook.com"
+          target="_blank"
+          class="text-blue-500 hover:text-blue-700 mx-2"
+          >Facebook</a
+        >
+        <a
+          href="https://www.twitter.com"
+          target="_blank"
+          class="text-blue-500 hover:text-blue-700 mx-2"
+          >Twitter</a
+        >
+        <a
+          href="https://www.instagram.com"
+          target="_blank"
+          class="text-blue-500 hover:text-blue-700 mx-2"
+          >Instagram</a
+        >
+        <a
+          href="https://www.linkedin.com"
+          target="_blank"
+          class="text-blue-500 hover:text-blue-700 mx-2"
+          >LinkedIn</a
+        >
       </div>
     </footer>
   </body>
+  <script>
+    document
+      .getElementById("menu-toggle")
+      .addEventListener("click", function () {
+        document.getElementById("menu").classList.toggle("hidden");
+      });
+  </script>
 </html>
