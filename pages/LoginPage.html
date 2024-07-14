@@ -9,9 +9,9 @@
     />
     <title>Login | Learn hub</title>
   </head>
-  <body class="bg-gray-900 min-h-screen flex items-center justify-center">
+  <body class="bg-gray-900">
     <div
-      class="flex items-center justify-between p-3 px-2 md:px-5 text-white bg-black w-full fixed top-0 left-0"
+      class="flex items-center justify-between p-4 px-2 md:px-5 text-white bg-black"
     >
       <a href="../index.html">
         <div class="flex items-center space-x-2">
@@ -19,7 +19,7 @@
           <h1 class="text-2xl font-bold">Learn Hub</h1>
         </div>
       </a>
-      <div class="hidden md:flex">
+      <div class="hidden md:flex md:items-center">
         <a
           href="../index.html"
           class="hover:bg-red-600 p-3 cursor-pointer rounded-md transition duration-100 ease-in-out"
@@ -76,7 +76,90 @@
           >Swift</a
         >
       </div>
-      <div class="flex items-center space-x-2">
+      <div class="md:hidden">
+        <img
+          src="../images/bar.png"
+          width="30px"
+          class="cursor-pointer"
+          id="menu-toggle"
+        />
+      </div>
+      <div
+        id="menu"
+        class="hidden md:hidden absolute top-16 left-0 w-full bg-black text-white z-10"
+      >
+        <div class="flex flex-col p-5">
+          <a
+            href="../index.html"
+            class="hover:bg-red-600 p-3 w-full cursor-pointer rounded-md transition duration-100 ease-in-out"
+            >Home</a
+          >
+          <a
+            href="htmlPage.html"
+            class="hover:bg-red-600 p-3 w-full cursor-pointer rounded-md transition duration-100 ease-in-out"
+            >Html</a
+          >
+          <a
+            href="CssPage.html"
+            class="hover:bg-red-600 p-3 w-full cursor-pointer rounded-md transition duration-100 ease-in-out"
+            >Css</a
+          >
+          <a
+            href="JavascriptPage.html"
+            class="hover:bg-red-600 p-3 w-full cursor-pointer rounded-md transition duration-100 ease-in-out"
+            >JavaScript</a
+          >
+          <a
+            href="ReactjsPage.html"
+            class="hover:bg-red-600 p-3 w-full cursor-pointer rounded-md transition duration-100 ease-in-out"
+            >React js</a
+          >
+          <a
+            href="CPage.html"
+            class="hover:bg-red-600 p-3 w-full cursor-pointer rounded-md transition duration-100 ease-in-out"
+            >C</a
+          >
+          <a
+            href="CppPage.html"
+            class="hover:bg-red-600 p-3 w-full cursor-pointer rounded-md transition duration-100 ease-in-out"
+            >C++</a
+          >
+          <a
+            href="PythonPage.html"
+            class="hover:bg-red-600 p-3 w-full cursor-pointer rounded-md transition duration-100 ease-in-out"
+            >Python</a
+          >
+          <a
+            href="MysqlPage.html"
+            class="hover:bg-red-600 p-3 w-full cursor-pointer rounded-md transition duration-100 ease-in-out"
+            >MySQL</a
+          >
+          <a
+            href="JavaPage.html"
+            class="hover:bg-red-600 p-3 w-full cursor-pointer rounded-md transition duration-100 ease-in-out"
+            >Java</a
+          >
+          <a
+            href="SwiftPage.html"
+            class="hover:bg-red-600 p-3 w-full cursor-pointer rounded-md transition duration-100 ease-in-out"
+            >Swift</a
+          >
+          <div class="mt-5">
+            <a
+              href="SignupPage.html"
+              class="p-3 bg-white text-black rounded-md hover:bg-gray-100 text-sm"
+              ><button>Sign up</button></a
+            >
+            <a
+              href="LoginPage.html"
+              class="p-3 bg-red-600 text-white rounded-md hover:bg-red-700 transition duration-100 ease-in-out text-sm"
+            >
+              <button>Login</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="hidden md:flex items-center space-x-2">
         <a
           href="SignupPage.html"
           class="p-3 bg-white text-black rounded-md hover:bg-gray-100 text-sm"
@@ -90,16 +173,15 @@
         </a>
       </div>
     </div>
-    <div
-      class="flex justify-center items-center min-h-screen w-full bg-gray-900 pt-16"
-    >
-      <a
-        href="../index.html"
-        class="text-white cursor-pointer absolute md:top-24 top-20 md:left-5 left-2 flex items-center bg-gray-200 hover:bg-gray-300 rounded-md p-1"
+
+    <div class="flex justify-center items-center min-h-screen w-full">
+      <a href="../index.html"
+        ><span
+          class="border-b pb-1 cursor-pointer flex items-center w-20 rounded-md p-1 absolute md:top-24 top-20 md:left-5 left-2"
+          ><img src="../images/home.png" width="18px" />
+          <p class="ml-2 text-gray-100">Home</p></span
+        ></a
       >
-        <img src="../images/home.png" width="20px" />
-        <p class="ml-1 text-black">Home</p>
-      </a>
       <div class="rounded-md border p-5 w-80 md:w-2/5 bg-white">
         <h1 class="text-2xl font-semibold text-center pb-5">
           Login | Learn Hub
@@ -138,4 +220,11 @@
       </div>
     </div>
   </body>
+  <script>
+    document
+      .getElementById("menu-toggle")
+      .addEventListener("click", function () {
+        document.getElementById("menu").classList.toggle("hidden");
+      });
+  </script>
 </html>
